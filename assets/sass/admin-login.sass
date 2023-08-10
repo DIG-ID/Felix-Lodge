@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@200;300&display=swap')
+
+
+//Color variables
+$main-black: #3D4F48
+$bg-color: #FEFAE0
+
+body
+  background-color: $main-black
+  background-position: bottom
+  background-position-y: 140%
+  background-repeat: no-repeat
+  background-size: contain
+  color: #000
+  font-family: 'Roboto Flex', sans-serif
+
+#login
+  width: 370px
+  #login_error
+    color: #000
+  .message
+    color: #000
+  h1
+    margin-bottom: 20px
+    a
+      width: 180px
+      height: 60px
+      background-size: 180px 60px
+      &:focus
+        box-shadow: none
+
+  form
+    border-radius: 0px
+    box-shadow: none
+    border: 1px solid #000
+    padding: 40px
+    background-color: $bg-color
+    label
+      color: #000
+      text-transform: uppercase
+      font-weight: 600
+      font-size: 0.7rem
+    .input
+      border: none
+      border-radius: 0px
+      box-shadow: none
+      background-color: $bg-color
+      border-bottom: 1px solid #000
+      font-size: 0.9rem
+      font-weight: normal
+      color: #000
+    input[type="submit"]
+      margin-top: 30px
+      display: block
+      color: #000
+      background-color: transparent
+      box-shadow: none
+      text-shadow: none
+      border-radius: 0px
+      padding: 5px 25px
+      border: 1px solid #000
+      transition: all 0.35s ease
+      font-size: 0.8rem
+      text-transform: uppercase
+      font-weight: 700
+      transition: all .3s ease-in-out
+      &:hover
+        background: #fff
+  #backtoblog, #nav
+    text-align: center
+    color: $bg-color
+    a
+      color: $bg-color
+      font-weight: 600
+
+  input:-webkit-autofill
+    -webkit-box-shadow: 0 0 0 30px white inset
+    -webkit-text-fill-color: #000 !important
+
+.privacy-policy-link
+  color: $bg-color
+
+.wpml-login-ls
+  form#wpml-login-ls-form
+    label
+    select#wpml-language-switcher-locales
+      @apply rounded-none border border-solid border-black text-black bg-bg-color uppercase text-xs font-sans font-semibold transition-all duration-300 ease-in hover:bg-white
+    input.button
+      @apply rounded-none border border-solid border-black text-black bg-bg-color uppercase text-xs font-sans font-semibold px-4 py-1 transition-all duration-300 ease-in hover:bg-white
