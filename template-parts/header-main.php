@@ -1,8 +1,8 @@
 <header id="header-main" class="header-main px-8 xl:px-0 w-full top-0 box-border bg-bg-color" itemscope itemtype="http://schema.org/WebSite">
-	<nav class="navigation-main container mx-auto" role="navigation" aria-label="<?php esc_attr_e( 'Main navigation', 'paun' ); ?>">
+	<nav class="navigation-main max-w-[94%] mx-auto" role="navigation" aria-label="<?php esc_attr_e( 'Main navigation', 'paun' ); ?>">
 		<div class="navigation-main-content flex flex-col sm:flex-row">
-			<div class="w-full mx-auto max-w-7xl flex flex-wrap items-center justify-center px-0 py-6 sm:py-8">
-				<div class="header-logo-wrapper mb-4 sm:mb-0">
+			<div class="w-full mx-auto flex flex-wrap items-center justify-center px-0 py-6 sm:py-12">
+				<div class="header-logo-wrapper absolute mb-4 sm:mb-0">
 					<?php 
 					$main_logo = get_field('settings_website_logo', 'option');
 					if (!empty($main_logo)): ?>
@@ -18,7 +18,7 @@
 						array(
 							'theme_location' => 'main',
 							'container'      => false,
-							'menu_class'     => 'main-menu-top-level flex text-main-menu uppercase justify-between', // Adjust classes here
+							'menu_class'     => 'main-menu-top-level block text-main-menu uppercase', // Adjust classes here
 							'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 							'fallback_cb'    => '__return_false',
 							'walker'         => new Left_Right_Menu_Walker(),
