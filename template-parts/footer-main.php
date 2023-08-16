@@ -10,38 +10,42 @@
 	</div>
 	<div class="footer-content container mx-auto py-8 grid gap-5 grid-cols-10 w-full px-8 xl:px-0">
 		<div class="col-span-5 lg:col-span-3">
-			<p class="text-body mt-10">
+			<p class="text-main-menu mt-10">
 				<?php the_field( 'contact_address', 'option' ) ?>
 			</p>
 			<p class="mt-10">
-				<a class="text-body" href="tel:<?php the_field( 'contact_phone_number', 'option' ) ?>"><?php the_field( 'contact_phone_number', 'option' ) ?></a>
+				<a class="text-main-menu" href="tel:<?php the_field( 'contact_phone_number', 'option' ) ?>"><?php the_field( 'contact_phone_number', 'option' ) ?></a>
 				<br>
-				<a class="text-body" href="mailto:<?php the_field( 'contact_email', 'option' ) ?>"><?php the_field( 'contact_email', 'option' ) ?></a>
+				<a class="text-main-menu" href="mailto:<?php the_field( 'contact_email', 'option' ) ?>"><?php the_field( 'contact_email', 'option' ) ?></a>
 			</p>
 		</div>
-		<div class="col-span-5 lg:col-span-3">
+		<div class="col-span-5 lg:col-span-3 grid grid-cols-1 lg:grid-cols-2">
+			<div class="col-span-1">
 			<?php
 			wp_nav_menu(
 				array(
 					'theme_location' => 'main',
 					'container'      => false,
-					'menu_class'     => 'menu-footer mt-10',
+					'menu_class'     => 'menu-footer text-main-menu uppercase mt-10',
 					'items_wrap'     => '<ul id="%1$s" class="%2$s menu-top-level">%3$s</ul>',
 					'fallback_cb'    => '__return_false',
 				),
 			);
 			?>
+			</div>
+			<div class="col-span-1">
 			<?php
 			wp_nav_menu(
 				array(
 					'theme_location' => 'footer_terms',
 					'container'      => false,
-					'menu_class'     => 'menu-footer mt-10',
+					'menu_class'     => 'menu-footer text-main-menu uppercase mt-10',
 					'items_wrap'     => '<ul id="%1$s" class="%2$s menu-top-level">%3$s</ul>',
 					'fallback_cb'    => '__return_false',
 				),
 			);
 			?>
+			</div>
 		</div>
 		<div class="col-span-10 lg:col-span-4 pt-12 lg:pt-0">
 			<?php 

@@ -16,7 +16,7 @@ module.exports = {
       'white': '#FFFFFF'
     },
     fontFamily: {
-      sans: ['Roboto Flex', 'sans-serif'],
+      sans: ['n27-regular-webfont', 'sans-serif'],
     },
 
     extend: {

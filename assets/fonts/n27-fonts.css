@@ -1,0 +1,300 @@
+/*N27 Bold*/
+@font-face {
+    font-family: 'n27-bold-webfont';
+    src: url('n27-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'n27-bold-webfont';
+    src: url('n27-bold-webfont.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'n27-bold-webfont';
+    src: url('n27-bold-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'n27-bold-webfont';
+    src: url('n27-bold-webfont.eot') format('eot');
+    font-weight: bold;
+    font-style: normal;
+}
+/*N27 Bold Italic*/
+@font-face {
+    font-family: 'n27-bolditalic-webfont';
+    src: url('n27-bolditalic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'n27-bolditalic-webfont';
+    src: url('n27-bolditalic-webfont.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'n27-bolditalic-webfont';
+    src: url('n27-bolditalic-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'n27-bolditalic-webfont';
+    src: url('n27-bolditalic-webfont.eot') format('eot');
+    font-weight: bold;
+    font-style: italic;
+}
+/*N27 Extralight*/
+@font-face {
+    font-family: 'n27-extralight-webfont';
+    src: url('n27-extralight-webfont.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'n27-extralight-webfont';
+    src: url('n27-extralight-webfont.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'n27-extralight-webfont';
+    src: url('n27-extralight-webfont.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'n27-extralight-webfont';
+    src: url('n27-extralight-webfont.eot') format('eot');
+    font-weight: 200;
+    font-style: normal;
+}
+/*N27 Extralight Italic*/
+@font-face {
+    font-family: 'n27-extralightitalic-webfont';
+    src: url('n27-extralightitalic-webfont.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'n27-extralightitalic-webfont';
+    src: url('n27-extralightitalic-webfont.woff2') format('woff2');
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'n27-extralightitalic-webfont';
+    src: url('n27-extralightitalic-webfont.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'n27-extralightitalic-webfont';
+    src: url('n27-extralightitalic-webfont.eot') format('eot');
+    font-weight: 200;
+    font-style: italic;
+}
+/*N27 Light*/
+@font-face {
+    font-family: 'n27-light-webfont';
+    src: url('n27-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'n27-light-webfont';
+    src: url('n27-light-webfont.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'n27-light-webfont';
+    src: url('n27-light-webfont.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'n27-light-webfont';
+    src: url('n27-light-webfont.eot') format('eot');
+    font-weight: 300;
+    font-style: normal;
+}
+/*N27 Light Italic*/
+@font-face {
+    font-family: 'n27-lightitalic-webfont';
+    src: url('n27-lightitalic-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'n27-lightitalic-webfont';
+    src: url('n27-lightitalic-webfont.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'n27-lightitalic-webfont';
+    src: url('n27-lightitalic-webfont.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'n27-lightitalic-webfont';
+    src: url('n27-lightitalic-webfont.eot') format('eot');
+    font-weight: 300;
+    font-style: italic;
+}
+/*N27 Regular*/
+@font-face {
+    font-family: 'n27-regular-webfont';
+    src: url('n27-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'n27-regular-webfont';
+    src: url('n27-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'n27-regular-webfont';
+    src: url('n27-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'n27-regular-webfont';
+    src: url('n27-regular-webfont.eot') format('eot');
+    font-weight: normal;
+    font-style: normal;
+}
+/*N27 Regular italic*/
+@font-face {
+    font-family: 'n27-regularitalic-webfont';
+    src: url('n27-regularitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'n27-regularitalic-webfont';
+    src: url('n27-regularitalic-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'n27-regularitalic-webfont';
+    src: url('n27-regularitalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'n27-regularitalic-webfont';
+    src: url('n27-regularitalic-webfont.eot') format('eot');
+    font-weight: normal;
+    font-style: italic;
+}
+/*N27 Medium*/
+@font-face {
+    font-family: 'n27-medium-webfont';
+    src: url('n27-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'n27-medium-webfont';
+    src: url('n27-medium-webfont.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'n27-medium-webfont';
+    src: url('n27-medium-webfont.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'n27-medium-webfont';
+    src: url('n27-medium-webfont.eot') format('eot');
+    font-weight: 500;
+    font-style: normal;
+}
+/*N27 Medium Italic*/
+@font-face {
+    font-family: 'n27-mediumitalic-webfont';
+    src: url('n27-mediumitalic-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'n27-mediumitalic-webfont';
+    src: url('n27-mediumitalic-webfont.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'n27-mediumitalic-webfont';
+    src: url('n27-mediumitalic-webfont.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'n27-mediumitalic-webfont';
+    src: url('n27-mediumitalic-webfont.eot') format('eot');
+    font-weight: 500;
+    font-style: italic;
+}
+/*N27 Thin*/
+@font-face {
+    font-family: 'n27-thin-webfont';
+    src: url('n27-thin-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'n27-thin-webfont';
+    src: url('n27-thin-webfont.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'n27-thin-webfont';
+    src: url('n27-thin-webfont.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'n27-thin-webfont';
+    src: url('n27-thin-webfont.eot') format('eot');
+    font-weight: 100;
+    font-style: normal;
+}
+/*N27 Thin Italic*/
+@font-face {
+    font-family: 'n27-thinitalic-webfont';
+    src: url('n27-thinitalic-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'n27-thinitalic-webfont';
+    src: url('n27-thinitalic-webfont.woff2') format('woff2');
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'n27-thinitalic-webfont';
+    src: url('n27-thinitalic-webfont.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'n27-thinitalic-webfont';
+    src: url('n27-thinitalic-webfont.eot') format('eot');
+    font-weight: 100;
+    font-style: italic;
+}

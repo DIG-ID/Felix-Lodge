@@ -18,7 +18,7 @@
 						array(
 							'theme_location' => 'main',
 							'container'      => false,
-							'menu_class'     => 'main-menu-top-level flex justify-between', // Adjust classes here
+							'menu_class'     => 'main-menu-top-level flex text-main-menu uppercase justify-between', // Adjust classes here
 							'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 							'fallback_cb'    => '__return_false',
 							'walker'         => new Left_Right_Menu_Walker(),
