@@ -6,7 +6,7 @@
         <div class="w-full max-w-[120px] border-t-2 inline-block border-text-color mt-4 mr-5"></div>
         <h2 class="title-subtitle"><?php the_field('section_previews_subtitle_1'); ?></h2>
     </div>
-    <div class="container mx-auto grid grid-cols-2 lg:grid-cols-12 pt-8 pb-36">
+    <div class="container mx-auto grid grid-cols-2 lg:grid-cols-12 pt-8 pb-52">
         <div class="col-span-1 lg:col-span-7">
             <?php 
             $preview_image_1 = get_field('section_previews_preview_image_1');
