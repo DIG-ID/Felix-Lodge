@@ -1,0 +1,49 @@
+<section id="section-previews" class="section-previews py-2 lg:pb-32 lg:pt-0 bg-bg-color overflow-hidden">
+    <div class="lg:max-w-[94%] mx-auto">
+        <h1 class="title-big"><?php the_field('section_previews_main_title_1'); ?></h1>
+    </div>
+    <div class="container mx-auto py-8 flex justify-end">
+        <div class="w-full max-w-[120px] border-t-2 inline-block border-text-color mt-4 mr-5"></div>
+        <h2 class="title-subtitle"><?php the_field('section_previews_subtitle_1'); ?></h2>
+    </div>
+    <div class="container mx-auto grid grid-cols-2 lg:grid-cols-12 pt-8 pb-36">
+        <div class="col-span-1 lg:col-span-7">
+            <?php 
+            $preview_image_1 = get_field('section_previews_preview_image_1');
+            if( $preview_image_1 ) {
+                echo wp_get_attachment_image( $preview_image_1, 'home-preview' );
+            }
+            ?>
+        </div>
+        <div class="col-span-1 lg:col-span-5 flex justify-center items-center flex-col">
+            <div>
+                <p class="text-body lg:max-w-md"><?php the_field('section_previews_description_1'); ?></p>
+                <a href="<?php the_permalink(); ?>" class="btn-moreinfo text-button !leading-9"><span class="pt-0"><?php esc_html_e( 'Mehr Erfahren', 'felixlodge' ) ?></span></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="lg:max-w-[94%] mx-auto flex justify-end">
+        <h1 class="title-big"><?php the_field('section_previews_main_title_2'); ?></h1>
+    </div>
+    <div class="container mx-auto py-8 flex">
+        <div class="w-full max-w-[120px] border-t-2 inline-block border-text-color mt-4 mr-5"></div>
+        <h2 class="title-subtitle lg:max-w-xl"><?php the_field('section_previews_subtitle_2'); ?></h2>
+    </div>
+    <div class="container mx-auto grid grid-cols-2 lg:grid-cols-12 py-8">
+        <div class="col-span-1 lg:col-span-5 flex justify-center items-center flex-col">
+            <div>
+                <p class="text-body lg:max-w-md"><?php the_field('section_previews_description_2'); ?></p>
+                <a href="<?php the_permalink(); ?>" class="btn-moreinfo text-button !leading-9"><span class="pt-0"><?php esc_html_e( 'Mehr Erfahren', 'felixlodge' ) ?></span></a>
+            </div>
+        </div>
+        <div class="col-span-1 lg:col-span-7">
+            <?php 
+            $preview_image_2 = get_field('section_previews_preview_image_2');
+            if( $preview_image_2 ) {
+                echo wp_get_attachment_image( $preview_image_2, 'home-preview' );
+            }
+            ?>
+        </div>
+    </div>
+</section>

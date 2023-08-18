@@ -1,5 +1,5 @@
-<section class="section-intro py-2 lg:pb-32 lg:pt-0 bg-bg-color overflow-hidden">
-    <div class=" lg:max-w-[94%] mx-auto">
+<section id="section-intro" class="section-intro py-2 lg:pb-32 lg:pt-0 bg-bg-color overflow-hidden">
+    <div class="lg:max-w-[94%] mx-auto">
         <?php 
         $header_image = get_field('section_intro_header_image');
         if( $header_image ) {

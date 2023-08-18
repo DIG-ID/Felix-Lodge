@@ -28,6 +28,8 @@ function felixlodge_theme_setup() {
 
 	add_image_size( 'gallery-full', 1024, false );
 
+	add_image_size( 'home-preview', 875, 615, true);
+
 }
 
 add_action( 'after_setup_theme', 'felixlodge_theme_setup' );
