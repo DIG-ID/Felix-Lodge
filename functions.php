@@ -30,6 +30,8 @@ function felixlodge_theme_setup() {
 
 	add_image_size( 'home-preview', 875, 615, true);
 
+	add_image_size( 'square-image', 422, 422, true);
+
 }
 
 add_action( 'after_setup_theme', 'felixlodge_theme_setup' );

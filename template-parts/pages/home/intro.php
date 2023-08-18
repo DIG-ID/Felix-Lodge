@@ -1,11 +1,13 @@
 <section id="section-intro" class="section-intro py-2 lg:pb-32 lg:pt-0 bg-bg-color overflow-hidden">
-    <div class="lg:max-w-[94%] mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-12 mx-auto px-14">
+        <div class="col-span-1 lg:col-span-12">
         <?php 
         $header_image = get_field('section_intro_header_image');
         if( $header_image ) {
             echo wp_get_attachment_image( $header_image, 'full' );
         }
         ?>
+        </div>
     </div>
     <div class="lg:max-w-[94%] mx-auto grid grid-cols-4 py-8">
         <div class="col-span-2">
