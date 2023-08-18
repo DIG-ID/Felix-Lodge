@@ -18,7 +18,7 @@
         <div class="col-span-1 lg:col-span-5 flex justify-center items-center flex-col">
             <div>
                 <p class="text-body lg:max-w-md"><?php the_field('section_previews_description_1'); ?></p>
-                <a href="<?php the_permalink(); ?>" class="btn-moreinfo text-button !leading-9"><span class="pt-0"><?php esc_html_e( 'Mehr Erfahren', 'felixlodge' ) ?></span></a>
+                <a href="<?php the_field('section_previews_button_link_1'); ?>" class="btn-moreinfo text-button !leading-9"><span class="pt-0"><?php esc_html_e( 'Mehr Erfahren', 'felixlodge' ) ?></span></a>
             </div>
         </div>
     </div>
@@ -34,7 +34,7 @@
         <div class="col-span-1 lg:col-span-5 flex justify-center items-center flex-col">
             <div>
                 <p class="text-body lg:max-w-md"><?php the_field('section_previews_description_2'); ?></p>
-                <a href="<?php the_permalink(); ?>" class="btn-moreinfo text-button !leading-9"><span class="pt-0"><?php esc_html_e( 'Mehr Erfahren', 'felixlodge' ) ?></span></a>
+                <a href="<?php the_field('section_previews_button_link_2'); ?>" class="btn-moreinfo text-button !leading-9"><span class="pt-0"><?php esc_html_e( 'Mehr Erfahren', 'felixlodge' ) ?></span></a>
             </div>
         </div>
         <div class="col-span-1 lg:col-span-7">
