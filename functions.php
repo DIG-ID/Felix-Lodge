@@ -152,8 +152,8 @@ function chasseral_theme_acf_op_gc_init() {
 	if ( function_exists( 'acf_add_options_page' ) ) :
 		$theme_option_page = acf_add_options_page(
 			array(
-				'page_title'      => __( 'felixlodge Theme Options', 'felixlodge' ),
-				'menu_title'      => __( 'felixlodge Theme', 'felixlodge' ),
+				'page_title'      => __( 'Felix Lodge Theme Options', 'felixlodge' ),
+				'menu_title'      => __( 'Felix Lodge Theme', 'felixlodge' ),
 				'menu_slug'       => 'felixlodge-theme-general-options',
 				'capability'      => 'edit_posts',
 				'icon_url'        => 'dashicons-admin-appearance',
@@ -166,6 +166,19 @@ function chasseral_theme_acf_op_gc_init() {
 }
 
 add_action( 'acf/init', 'chasseral_theme_acf_op_gc_init' );
+
+/**
+ * Lowers the metabox priority to 'core' for Yoast SEO's metabox.
+ *
+ * @param string $priority The current priority.
+ *
+ * @return string $priority The potentially altered priority.
+ */
+function parsber_theme_lower_yoast_metabox_priority( $priority ) {
+	return 'core';
+}
+
+add_filter( 'wpseo_metabox_prio', 'parsber_theme_lower_yoast_metabox_priority' );
 
 // Theme customizer options.
 require get_template_directory() . '/inc/customizer.php';

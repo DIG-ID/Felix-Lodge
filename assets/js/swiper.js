@@ -17,6 +17,20 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
     }
+
+    if (document.body.classList.contains("page-template-page-sleeping")) {
+
+      const roomGallery = new Swiper(".swiper-room-gallery", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+    }
     
   }, false);
 });
