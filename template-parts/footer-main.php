@@ -1,4 +1,4 @@
-<footer class="footer-main py-16 border-t-2 border-solid border-text-color bg-bg-color">
+<footer class="footer-main py-16 border-t-2 border-solid border-black bg-white">
 	<div class="footer-content container mx-auto py-8 grid grid-cols-1 gap-5 lg:grid-cols-10 w-full px-8 xl:px-0">
 		<div class="col-span-1 lg:col-span-3">
 		<?php 

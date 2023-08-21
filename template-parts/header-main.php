@@ -1,4 +1,4 @@
-<header id="header-main" class="header-main px-8 xl:px-0 w-full top-0 box-border bg-bg-color" itemscope itemtype="http://schema.org/WebSite">
+<header id="header-main" class="header-main px-8 xl:px-0 w-full top-0 box-border bg-white" itemscope itemtype="http://schema.org/WebSite">
 	<nav class="navigation-main grid grid-cols-1 lg:grid-cols-12 px-14" role="navigation" aria-label="<?php esc_attr_e( 'Main navigation', 'paun' ); ?>">
 		<div class="navigation-main-content flex flex-col sm:flex-row col-span-1 lg:col-span-12">
 			<div class="w-full mx-auto flex flex-wrap items-center justify-center px-0 py-6 sm:py-12">

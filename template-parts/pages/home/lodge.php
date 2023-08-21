@@ -1,4 +1,4 @@
-<section id="section-lodge" class="section-lodge py-2 lg:pb-32 lg:pt-0 bg-bg-color overflow-hidden">
+<section id="section-lodge" class="section-lodge py-2 lg:pb-32 lg:pt-0 bg-white overflow-hidden">
     <div class="container mx-auto grid grid-cols-3">
         <div class="col-span-2">
             <h2 class="title-big"><?php the_field('section_lodge_title'); ?></h2>

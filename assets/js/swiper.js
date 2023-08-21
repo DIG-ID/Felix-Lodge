@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
           el: '.swiper-pagination-angebote',
           clickable: true,
           renderBullet: function (index, className) {
-            return '<span class="' + className + ' font-titles text-text-color text-3xl">' + (index + 1) + '</span>';
+            return '<span class="' + className + ' font-titles text-white text-3xl">' + (index + 1) + '</span>';
           },
         },
       });

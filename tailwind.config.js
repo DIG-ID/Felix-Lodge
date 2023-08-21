@@ -8,13 +8,6 @@ module.exports = {
     './template-parts/**/*.php',
   ],
   theme: {
-    colors: {
-      'main-black': '#000000',
-      'bg-color': '#FFFFFF',
-      'text-color': '#000000',
-      'black': '#000000',
-      'white': '#FFFFFF'
-    },
     fontFamily: {
       sans: ['n27-regular-webfont', 'sans-serif'],
     },
