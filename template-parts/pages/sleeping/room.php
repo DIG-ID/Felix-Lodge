@@ -1,7 +1,7 @@
 <section id="section-room" class="section-room px-14 bg-white overflow-hidden">
 	<div class="grid grid-cols-1 lg:grid-cols-12">
 		<div class="lg:col-start-2 col-span-12 lg:col-span-3"> 
-			<h2 class="title-subtitle mb-8"><?php the_field( 'section_room_title' ); ?></h2>
+			<h2 class="title mb-8"><?php the_field( 'section_room_title' ); ?></h2>
 			<p class="text-body"><?php the_field( 'section_room_description' ); ?></p>
 		</div>
 		<div class="lg:col-start-7 col-span-12 lg:col-span-6">
