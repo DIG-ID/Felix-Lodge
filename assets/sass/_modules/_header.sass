@@ -3,3 +3,22 @@
 
 .right-menu-item
     @apply float-right ml-20
+
+.mobile-menu-toggle
+    display: none
+
+.mobile-menu
+    display: none
+
+.mobile-menu.active
+    display: block
+
+@media (max-width: 1200px)
+    .mobile-menu-toggle
+        display: block
+    .main-menu-top-level
+        display: none
+    
+    .mobile-menu
+        .main-menu-responsive
+            @apply flex flex-col justify-center items-center pt-10
