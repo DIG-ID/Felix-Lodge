@@ -1,9 +1,3 @@
-jQuery(document).ready(function($) {
-
-    
-
-});
-
 document.addEventListener("DOMContentLoaded", function () {
     const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
     const mobileMenu = document.querySelector(".mobile-menu");
