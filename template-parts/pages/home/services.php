@@ -1,4 +1,4 @@
-<section id="section-lodge" class="section-lodge px-14 bg-white overflow-hidden">
+<section id="section-services" class="section-services px-14 bg-white overflow-hidden">
 <hr class="bg-black h-[2px]">
     <div class="grid grid-cols-1 lg:grid-cols-12 py-40">
 		<div class=" lg:col-start-2 lg:col-span-5">
