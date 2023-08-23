@@ -1,5 +1,5 @@
-<section id="section-intro" class="section-intro py-2 lg:pb-32 lg:pt-0 px-5 lg:px-16 xl:px-14 bg-white overflow-hidden">
-    <div class="grid grid-cols-1 lg:grid-cols-12 pt-40">
+<section id="section-intro" class="section-intro lg:pb-32 pt-0 px-5 lg:px-16 xl:px-14 bg-white overflow-hidden">
+    <div class="grid grid-cols-1 lg:grid-cols-12 pt-32">
         <div class="col-span-1 lg:col-span-12">
         <?php 
         $header_image = get_field('section_intro_header_image');
