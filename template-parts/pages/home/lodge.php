@@ -1,5 +1,5 @@
 <section id="section-lodge" class="section-lodge px-14 bg-white overflow-hidden">
-<hr class="bg-black h-[2px]">
+<hr class="border-t-2 border-black">
     <div class="grid grid-cols-1 lg:grid-cols-12 py-40">
 		<div class=" lg:col-start-2 lg:col-span-5">
 			<h2 class="title-big mb-16"><?php the_field('section_lodge_title'); ?></h2>
@@ -21,5 +21,5 @@
 			?>
 		</div>
 	</div>
-	<hr class="bg-black h-[2px]">
+	<hr class="border-t-2 border-black">
 </section>
