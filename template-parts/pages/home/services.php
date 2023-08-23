@@ -1,17 +1,15 @@
 <section id="section-services" class="section-services px-14 bg-white overflow-hidden">
 	<hr class="border-t-2 border-black">
-	<div class="grid grid-cols-1 lg:grid-cols-12 gap-x-6 pt-40">
-		<div class="lg:col-start-2 lg:col-span-5">
-			<h2 class="title-big mb-16"><?php the_field('section_services_title'); ?></h2>
-		</div>
-		<div class="col-span-1 lg:col-start-8">
-			<div class="w-full max-w-[120px] border-b-2 inline-block border-black mt-5"></div>
+	<div class="grid grid-cols-1 lg:grid-cols-12 gap-x-6 pt-40 items-center">
+		<h2 class="title-big lg:col-start-2 lg:col-span-5 mb-20"><?php the_field('section_services_title'); ?></h2>
+		<div class="col-span-1 lg:col-start-8 -mt-24">
+			<div class="w-full max-w-[120px] border-b-2 inline-block border-black"></div>
 		</div>
 		<div class="col-span-1 lg:col-span-3 lg:col-start-9">
-			<p class="section-descriptions col-span-4"><?php the_field('section_services_subtitle'); ?></p>
+			<p class="section-descriptions col-span-4 xl:max-w-sm"><?php the_field('section_services_subtitle'); ?></p>
 		</div>
 	</div>
-	<div class="grid grid-cols-1 lg:grid-cols-4 py-20 gap-16 text-center px-[20%]">
+	<div class="grid grid-cols-1 lg:grid-cols-4 py-28 gap-16 text-center px-[20%]">
 	<?php
 	if( have_rows('section_services_services_list') ):
 	while( have_rows('section_services_services_list') ) : the_row(); ?>

@@ -8,7 +8,7 @@
 					<div class="w-full max-w-[120px] border-b-2 inline-block border-black mt-3"></div>
 				</div>
 				<p class="section-descriptions col-span-4"><?php the_field('section_lodge_subtitle'); ?></p>
-                <p class="text-body col-span-4 col-start-2 mb-10"><?php the_field('section_lodge_description'); ?></p>
+                <p class="text-body col-span-4 col-start-2 !mb-16"><?php the_field('section_lodge_description'); ?></p>
 				<a href="<?php the_permalink(); ?>" class="btn-primary col-start-2"><?php esc_html_e( 'Zum Sortiment', 'felixlodge' ); ?></a>
 			</div>
 		</div>

@@ -1,6 +1,6 @@
-<footer class="footer-main py-16 border-t-2 border-solid border-black bg-white">
-	<div class="footer-content container mx-auto py-8 grid grid-cols-1 gap-5 lg:grid-cols-10 w-full px-8 xl:px-0">
-		<div class="col-span-1 lg:col-span-3">
+<footer class="footer-main py-16 border-t-2 border-solid px-5 lg:px-16 xl:px-14 border-black bg-white">
+	<div class="footer-content py-8 gap-5 lg:gap-4 xl:gap-8 grid grid-cols-4 md:grid-cols-8 lg:grid-cols-8 xl:grid-cols-12">
+		<div class="col-span-1 lg:col-span-3 lg:col-start-2">
 		<?php 
 		$footer_logo = get_field('settings_website_logo', 'option');
 		if( !empty( $footer_logo ) ): ?>
@@ -8,8 +8,8 @@
 		<?php endif; ?>
 		</div>
 	</div>
-	<div class="footer-content container mx-auto py-8 grid gap-5 grid-cols-10 w-full px-8 xl:px-0">
-		<div class="col-span-5 lg:col-span-3">
+	<div class="footer-content py-8 gap-5 lg:gap-4 xl:gap-8 grid grid-cols-4 md:grid-cols-8 lg:grid-cols-8 xl:grid-cols-12">
+		<div class="col-span-4 md:col-span-4 xl:col-span-3 xl:col-start-2">
 			<p class="text-main-menu mt-10">
 				<?php the_field( 'contact_address', 'option' ) ?>
 			</p>
@@ -19,8 +19,8 @@
 				<a class="text-main-menu" href="mailto:<?php the_field( 'contact_email', 'option' ) ?>"><?php the_field( 'contact_email', 'option' ) ?></a>
 			</p>
 		</div>
-		<div class="col-span-5 lg:col-span-3 grid grid-cols-1 lg:grid-cols-2">
-			<div class="col-span-1">
+		<div class="col-span-4 md:col-span-4 grid grid-cols-4 md:grid-cols-4">
+			<div class="col-span-2 md:col-span-2">
 			<?php
 			wp_nav_menu(
 				array(
@@ -33,7 +33,7 @@
 			);
 			?>
 			</div>
-			<div class="col-span-1">
+			<div class="col-span-2 md:col-span-2">
 			<?php
 			wp_nav_menu(
 				array(
@@ -47,7 +47,9 @@
 			?>
 			</div>
 		</div>
-		<div class="col-span-10 lg:col-span-4 pt-12 lg:pt-0">
+		<div class="col-span-4 md:col-span-5">
+			<p class="text-main-menu uppercase mt-10"><?php esc_html_e( 'Newsletter', 'felixlodge' ) ?></p>
+			<p class="text-body mt-14 !mb-0"><?php esc_html_e( 'Melden Sie sich für unseren Newsletter an.', 'felixlodge' ) ?></p>
 			<?php 
 			$form_shortcode = get_field('settings_newsletter_form_shortcode', 'option');
 			echo do_shortcode($form_shortcode);
