@@ -1,12 +1,12 @@
-<section id="section-intro" class="section-intro px-14 pt-72 pb-40 bg-white overflow-hidden">
-	<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 pb-10">
-		<div class="col-span-1 lg:col-span-6">
-			<h1 class="title-big"><?php the_field( 'section_intro_title' ); ?></h1>
+<section id="section-intro" class="section-intro px-5 lg:px-16 xl:px-14 pt-72 pb-40 bg-white overflow-hidden">
+	<div class="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-8 xl:grid-cols-12 gap-5 lg:gap-4 xl:gap-8 pb-10">
+		<div class="col-span-4 md:col-span-4 lg:col-span-4 xl:col-span-4">
+			<h1 class="title-big mb-16 lg:mb-0"><?php the_field( 'section_intro_title' ); ?></h1>
 		</div>
-		<div class="col-span-1">
+		<div class="col-span-1 xl:col-start-8">
 			<div class="w-full max-w-[120px] border-b-2 inline-block border-black mt-3"></div>
 		</div>
-		<div class="col-span-1 lg:col-span-3">
+		<div class="col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3">
 			<div class="col-span-2 text-body"><?php the_field( 'section_intro_description' ); ?></div>
 		</div>
 	</div>
