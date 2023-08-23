@@ -1,6 +1,6 @@
 <footer class="footer-main py-16 border-t-2 border-solid px-5 lg:px-16 xl:px-14 border-black bg-white">
 	<div class="footer-content py-8 gap-5 lg:gap-4 xl:gap-8 grid grid-cols-4 md:grid-cols-8 lg:grid-cols-8 xl:grid-cols-12">
-		<div class="col-span-1 lg:col-span-3 lg:col-start-2">
+		<div class="col-span-1 xl:col-start-2">
 		<?php 
 		$footer_logo = get_field('settings_website_logo', 'option');
 		if( !empty( $footer_logo ) ): ?>
@@ -47,7 +47,7 @@
 			?>
 			</div>
 		</div>
-		<div class="col-span-4 md:col-span-5">
+		<div class="col-span-4 md:col-span-5 xl:col-span-3">
 			<p class="text-main-menu uppercase mt-10"><?php esc_html_e( 'Newsletter', 'felixlodge' ) ?></p>
 			<p class="text-body mt-14 !mb-0"><?php esc_html_e( 'Melden Sie sich für unseren Newsletter an.', 'felixlodge' ) ?></p>
 			<?php 
