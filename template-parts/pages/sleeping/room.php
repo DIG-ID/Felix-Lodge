@@ -12,9 +12,9 @@
 				<div class="swiper swiper-room-gallery">
 					<div class="swiper-wrapper">
 						<?php foreach ( $gallery as $gallery_id ) : ?>
-							<div class="swiper-slide">
+							<a class="swiper-slide" href="<?php echo esc_url( wp_get_attachment_image_url( $gallery_id, 'full' ) ); ?>" data-fancybox="gallery">
 								<?php echo wp_get_attachment_image( $gallery_id, 'full' ); ?>
-							</div>
+							</a>
 						<?php endforeach; ?>
 					</div>
 					<div class="swiper-button-next"></div>
