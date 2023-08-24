@@ -14,7 +14,7 @@
 
 				<div class="w-full">
 					<button id="mobile-menu-toggle" class="mobile-menu-toggle float-right">
-						<span class="menu-icon"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/burger-menu.svg" title="mobile menu" alt="mobile menu"></span>
+						<span class="menu-icon"><img id="menu-icon-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/burger-menu.svg" title="mobile menu" alt="mobile menu"></span>
 					</button>
 					<?php
 					wp_nav_menu(

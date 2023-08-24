@@ -1,5 +1,5 @@
 <section id="section-intro" class="section-intro lg:pb-32 pt-0 container-margins bg-white overflow-hidden">
-    <div class="container-grid pt-32">
+    <div class="container-grid pt-28">
         <div class="col-span-4 md:col-span-8 xl:col-span-12">
         <?php 
         $header_image = get_field('section_intro_header_image');
