@@ -1,5 +1,5 @@
-<section id="section-intro" class="section-intro px-5 lg:px-16 xl:px-14 pt-72 pb-40 bg-white overflow-hidden">
-	<div class="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-8 xl:grid-cols-12 gap-5 lg:gap-4 xl:gap-8 pb-10">
+<section id="section-intro" class="section-intro container-margins pt-72 pb-16 md:pb-24 xl:pb-40 bg-white overflow-hidden">
+	<div class="container-grid pb-10">
 		<div class="col-span-4 md:col-span-4 lg:col-span-4 xl:col-span-4">
 			<h1 class="title-big mb-16 lg:mb-0"><?php the_field( 'section_intro_title' ); ?></h1>
 		</div>
