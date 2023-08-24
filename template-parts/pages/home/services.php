@@ -1,8 +1,8 @@
-<section id="section-services" class="section-services px-5 lg:px-16 xl:px-14 bg-white overflow-hidden">
+<section id="section-services" class="section-services container-margins bg-white overflow-hidden">
 	<hr class="border-t-2 border-black">
-	<div class="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-8 xl:grid-cols-12 gap-5 lg:gap-4 xl:gap-8 pt-20 xl:pt-40 items-center">
+	<div class="container-grid pt-20 xl:pt-40 items-center">
 		<h2 class="title-big col-span-4 xl:col-span-5 xl:col-start-2 mb-20"><?php the_field('section_services_title'); ?></h2>
-		<div class="col-span-1 md:col-start-4 xl:col-start-8 -mt-16 xl:-mt-24">
+		<div class="col-span-1 md:col-start-4 xl:col-start-8 -mt-8 md:-mt-16 lg:-mt-8 xl:-mt-24 2xl:-mt-16">
 			<div class="w-full max-w-[120px] border-b-2 inline-block border-black"></div>
 		</div>
 		<div class="col-span-3 md:col-span-3 xl:col-span-3 md:col-start-5 xl:col-start-9">

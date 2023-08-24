@@ -1,5 +1,5 @@
-<footer class="footer-main pb-16 px-5 lg:px-16 xl:px-14 bg-white">
-	<div class="footer-content pb-8 pt-24 gap-5 lg:gap-4 xl:gap-8 grid grid-cols-4 md:grid-cols-8 lg:grid-cols-8 xl:grid-cols-12 border-t-2 border-solid border-black">
+<footer class="footer-main pb-16 container-margins bg-white">
+	<div class="footer-content pb-8 pt-24 container-grid border-t-2 border-solid border-black">
 		<div class="col-span-1 xl:col-start-2">
 		<?php 
 		$footer_logo = get_field('settings_website_logo', 'option');
@@ -8,7 +8,7 @@
 		<?php endif; ?>
 		</div>
 	</div>
-	<div class="footer-content md:py-8 gap-5 lg:gap-4 xl:gap-8 grid grid-cols-4 md:grid-cols-8 lg:grid-cols-8 xl:grid-cols-12">
+	<div class="footer-content md:py-8 container-grid">
 		<div class="col-span-4 md:col-span-4 xl:col-span-3 xl:col-start-2">
 			<p class="text-black text-xs sm:text-sm xl:text-xl font-sans font-normal mb-8 md:mt-10">
 				<?php the_field( 'contact_address', 'option' ) ?>

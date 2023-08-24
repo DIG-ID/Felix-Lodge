@@ -1,4 +1,4 @@
-<section id="section-angebote" class="section-angebote px-5 lg:px-16 xl:px-14 bg-white overflow-hidden">
+<section id="section-angebote" class="section-angebote container-margins bg-white overflow-hidden">
 	<hr class="border-t-2 border-black">
     <div class="grid grid-cols-1 xl:grid-cols-2">
         <div class="col-span-1 grid grid-cols-4 md:grid-cols-8 xl:grid-cols-6 gap-5 lg:gap-4 xl:gap-8 border-b-2 xl:border-b-0 xl:border-r-2 border-black py-20 xl:py-32">

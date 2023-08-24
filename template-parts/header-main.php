@@ -1,7 +1,7 @@
-<header id="header-main" class="header-main w-full top-0 box-border bg-white fixed z-50 px-5 lg:px-16 xl:px-14" itemscope itemtype="http://schema.org/WebSite">
-	<nav class="navigation-main gap-5 lg:gap-4 xl:gap-8 grid grid-cols-4 md:grid-cols-8 lg:grid-cols-8 xl:grid-cols-12" role="navigation" aria-label="<?php esc_attr_e( 'Main navigation', 'paun' ); ?>">
+<header id="header-main" class="header-main w-full top-0 box-border bg-white fixed z-50 container-margins" itemscope itemtype="http://schema.org/WebSite">
+	<nav class="navigation-main container-grid" role="navigation" aria-label="<?php esc_attr_e( 'Main navigation', 'paun' ); ?>">
 		<div class="navigation-main-content flex flex-col sm:flex-row col-span-4 md:col-span-8 xl:col-span-12">
-			<div class="w-full mx-auto flex flex-wrap items-center justify-center px-0 py-12">
+			<div class="w-full mx-auto flex flex-wrap items-center justify-center px-0 py-[2.6rem]">
 				<div class="header-logo-wrapper absolute mb-4 sm:mb-0">
 					<?php 
 					$main_logo = get_field('settings_website_logo', 'option');
