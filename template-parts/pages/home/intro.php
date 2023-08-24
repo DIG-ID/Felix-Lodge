@@ -44,7 +44,7 @@
             <div class="col-span-2 text-body lg:max-w-[270px]"><?php the_field('section_intro_text_box_3'); ?></div>
         </div>
     </div>
-    <div class="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-8 xl:grid-cols-12 gap-5 lg:gap-4 xl:gap-8">
+    <div class="grid grid-cols-4 md:grid-cols-8 lg:grid-cols-8 xl:grid-cols-12 gap-5 lg:gap-4 xl:gap-8 pt-14 xl:pt-0">
         <div class="col-span-3 xl:col-span-3 xl:col-start-3">
             <p class="title"><?php the_field('section_intro_intro_image_description'); ?></p>
         </div>
