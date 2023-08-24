@@ -1,8 +1,8 @@
-<section id="section-previews" class="section-previews xl:pb-40 xl:pt-0 container-margins bg-white overflow-hidden">
-    <div class="container-grid pt-24 lg:pt-0">
+<section id="section-previews" class="section-previews xl:pb-72 xl:pt-0 container-margins bg-white overflow-hidden">
+    <div class="container-grid pt-[70px] md:pt-0">
         <h1 class="title-big"><?php the_field('section_previews_main_title_1'); ?></h1>
     </div>
-    <div class="container-grid py-8">
+    <div class="container-grid pt-12 pb-20 xl:pt-8 xl:pb-28">
         <div class="col-span-1 col-start-2 md:col-start-3 xl:col-start-8">
             <div class="w-full max-w-[120px] border-t-2 inline-block border-black mt-4 xl:mt-6 mr-5"></div>
         </div>
@@ -32,7 +32,7 @@
             <h1 class="title-big"><?php the_field('section_previews_main_title_2'); ?></h1>
         </div>
     </div>
-    <div class="container-grid py-16 xl:py-8">
+    <div class="container-grid py-16 xl:py-10">
         <div class="col-span-1 md:col-start-3 xl:col-start-1">
             <div class="w-full max-w-[120px] border-t-2 inline-block border-black mt-6 mr-5"></div>
         </div>
@@ -40,7 +40,7 @@
             <h2 class="title lg:max-w-xl"><?php the_field('section_previews_subtitle_2'); ?></h2>
         </div>
     </div>
-    <div class="container-grid py-8">
+    <div class="container-grid pb-8">
         <div class="col-span-3 md:col-span-8 xl:col-span-3 xl:col-start-2 flex justify-center items-center flex-col order-2 xl:order-1">
             <div class="w-full md:pt-14 xl:pt-0 block md:grid xl:block md:grid-cols-8">
                 <p class="text-body lg:max-w-md !mb-16 md:col-span-3"><?php the_field('section_previews_description_2'); ?></p>
