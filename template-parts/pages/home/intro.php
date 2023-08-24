@@ -13,7 +13,7 @@
         <div class="col-span-4 md:col-span-8 xl:col-span-6">
             <h1 class="title-big"><?php the_field('section_intro_first_title'); ?></h1>
         </div>
-        <div class="col-span-1 col-start-2 xl:col-start-7">
+        <div class="col-span-1 md:col-start-2 xl:col-start-7">
             <div class="w-full max-w-[120px] border-b-2 inline-block border-black mt-3"></div>
         </div>
         <div class="col-span-3 md:col-span-2 xl:col-span-2">

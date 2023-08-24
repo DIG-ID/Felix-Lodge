@@ -1,5 +1,5 @@
-<footer class="footer-main py-16 border-t-2 border-solid px-5 lg:px-16 xl:px-14 border-black bg-white">
-	<div class="footer-content py-8 gap-5 lg:gap-4 xl:gap-8 grid grid-cols-4 md:grid-cols-8 lg:grid-cols-8 xl:grid-cols-12">
+<footer class="footer-main pb-16 px-5 lg:px-16 xl:px-14 bg-white">
+	<div class="footer-content pb-8 pt-24 gap-5 lg:gap-4 xl:gap-8 grid grid-cols-4 md:grid-cols-8 lg:grid-cols-8 xl:grid-cols-12 border-t-2 border-solid border-black">
 		<div class="col-span-1 xl:col-start-2">
 		<?php 
 		$footer_logo = get_field('settings_website_logo', 'option');
@@ -8,9 +8,9 @@
 		<?php endif; ?>
 		</div>
 	</div>
-	<div class="footer-content py-8 gap-5 lg:gap-4 xl:gap-8 grid grid-cols-4 md:grid-cols-8 lg:grid-cols-8 xl:grid-cols-12">
+	<div class="footer-content md:py-8 gap-5 lg:gap-4 xl:gap-8 grid grid-cols-4 md:grid-cols-8 lg:grid-cols-8 xl:grid-cols-12">
 		<div class="col-span-4 md:col-span-4 xl:col-span-3 xl:col-start-2">
-			<p class="text-main-menu mt-10">
+			<p class="text-black text-xs sm:text-sm xl:text-xl font-sans font-normal mb-8 md:mt-10">
 				<?php the_field( 'contact_address', 'option' ) ?>
 			</p>
 			<p class="mt-10">
@@ -48,8 +48,8 @@
 			</div>
 		</div>
 		<div class="col-span-4 md:col-span-5 xl:col-span-3">
-			<p class="text-main-menu uppercase mt-10"><?php esc_html_e( 'Newsletter', 'felixlodge' ) ?></p>
-			<p class="text-body mt-14 !mb-0"><?php esc_html_e( 'Melden Sie sich für unseren Newsletter an.', 'felixlodge' ) ?></p>
+			<p class="text-main-menu uppercase !mb-4 xl:mt-10"><?php esc_html_e( 'Newsletter', 'felixlodge' ) ?></p>
+			<p class="text-body xl:mt-14 !mb-0"><?php esc_html_e( 'Melden Sie sich für unseren Newsletter an.', 'felixlodge' ) ?></p>
 			<?php 
 			$form_shortcode = get_field('settings_newsletter_form_shortcode', 'option');
 			echo do_shortcode($form_shortcode);
