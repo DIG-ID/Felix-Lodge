@@ -6,6 +6,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (document.body.classList.contains("page-template-page-home")) {
 
+      const homeImages = new Swiper(".swiper-header-home", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        autoplay: {
+            delay: 4000,
+        },
+        effect: "fade",
+        speed: 1500,
+      });
+
+    }
+
+    if (document.body.classList.contains("page-template-page-home")) {
+
       const agendaEventsSwiper = new Swiper('.swiper-angebote-home', {
         pagination: {
           el: '.swiper-pagination-angebote',

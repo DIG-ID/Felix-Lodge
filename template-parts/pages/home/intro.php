@@ -1,12 +1,21 @@
 <section id="section-intro" class="section-intro lg:pb-32 pt-0 container-margins bg-white overflow-hidden">
     <div class="container-grid pt-28">
         <div class="col-span-4 md:col-span-8 xl:col-span-12">
-        <?php 
-        $header_image = get_field('section_intro_header_image');
-        if( $header_image ) {
-            echo wp_get_attachment_image( $header_image, 'full' );
-        }
-        ?>
+            <?php 
+            $images = get_field('section_intro_image_slider');
+            $size = 'home-header'; // (thumbnail, medium, large, full or custom size)
+            if( $images ): ?>
+                <div class="swiper swiper-header-home">
+                    <div class="swiper-wrapper">
+                    <?php foreach( $images as $image_id ): ?>
+                        <div class="swiper-slide">
+                            <?php echo wp_get_attachment_image( $image_id, $size ); ?>
+                            </div>
+                    <?php endforeach; ?>
+                    </div>
+				</div>
+            <?php endif; ?>
+                
         </div>
     </div>
     <div class="container-grid py-8">
