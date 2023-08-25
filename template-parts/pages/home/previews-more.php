@@ -42,10 +42,10 @@
             ?>
         </div>
         <div class="col-span-1 col-start-2 md:col-start-6 xl:col-start-8 flex flex-col justify-center order-1 md:order-2">
-            <div class="w-full max-w-[120px] border-b-2 inline-block border-black md:-mt-11 lg:mt-0"></div>
+            <div class="w-full max-w-[120px] border-b-2 inline-block border-black md:-mt-11 lg:mt-0 mb-14 md:mb-0"></div>
         </div>
         <div class="col-span-2 md:col-span-2 xl:col-span-3 col-start-3 md:col-start-7 xl:col-start-9 flex flex-col justify-center hyphenate order-2 md:order-3">
-            <p class="title lg:max-w-xl"><?php the_field('previews_more_subtitle_2'); ?></p>
+            <p class="title lg:max-w-xl mb-14 md:mb-0"><?php the_field('previews_more_subtitle_2'); ?></p>
         </div>
         <div class="col-span-3 md:col-span-3 xl:col-span-3 md:col-start-2 xl:col-start-4 mt-10 md:mt-0 order-5 md:order-4">
             <p class="text-body md:pt-44"><?php the_field('previews_more_description_2'); ?></p>

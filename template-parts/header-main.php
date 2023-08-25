@@ -12,7 +12,7 @@
 					<?php endif; ?>
 				</div>
 
-				<div class="w-full">
+				<div class="w-full relative -top-[26px] sm:-top-[18px] xl:top-0">
 					<button id="mobile-menu-toggle" class="mobile-menu-toggle float-right">
 						<span class="menu-icon"><img id="menu-icon-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/burger-menu.svg" title="mobile menu" alt="mobile menu"></span>
 					</button>

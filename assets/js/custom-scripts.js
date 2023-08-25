@@ -18,4 +18,21 @@ document.addEventListener("DOMContentLoaded", function () {
             }, 0); // Immediately after adding the "active" class
         }
     });
+
+    const header = document.getElementById('header-main'); // Replace with your actual header ID
+    let lastScrollPosition = 0;
+
+    window.addEventListener('scroll', () => {
+        const currentScrollPosition = window.scrollY;
+
+        if (currentScrollPosition > lastScrollPosition) {
+            // Scrolling down, add the shadow class
+            header.classList.add('header-with-shadow');
+        } else {
+            // Scrolling up, remove the shadow class
+            header.classList.remove('header-with-shadow');
+        }
+
+        lastScrollPosition = currentScrollPosition;
+    });
 });

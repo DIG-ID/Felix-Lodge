@@ -1,4 +1,4 @@
-<section id="section-previews" class="section-previews xl:pb-72 xl:pt-0 container-margins bg-white overflow-hidden">
+<section id="section-previews" class="section-previews xl:pb-80 xl:pt-0 container-margins bg-white overflow-hidden">
     <div class="container-grid pt-[70px] md:pt-0">
         <h1 class="title-big"><?php the_field('section_previews_main_title_1'); ?></h1>
     </div>
@@ -40,10 +40,10 @@
             <h2 class="title lg:max-w-xl"><?php the_field('section_previews_subtitle_2'); ?></h2>
         </div>
     </div>
-    <div class="container-grid pb-8">
+    <div class="container-grid pb-20 md:pb-28 xl:pb-8">
         <div class="col-span-3 md:col-span-8 xl:col-span-3 xl:col-start-2 flex justify-center items-center flex-col order-2 xl:order-1">
-            <div class="w-full md:pt-14 xl:pt-0 block md:grid xl:block md:grid-cols-8">
-                <p class="text-body lg:max-w-md !mb-16 md:col-span-3"><?php the_field('section_previews_description_2'); ?></p>
+            <div class="w-full pt-7 md:pt-14 xl:pt-0 block md:grid xl:block md:grid-cols-8">
+                <p class="text-body lg:max-w-md !mb-12 xl:!mb-16 md:col-span-3"><?php the_field('section_previews_description_2'); ?></p>
                 <a href="<?php the_field('section_previews_button_link_2'); ?>" class="btn-primary md:col-start-5 max-h-11"><span class="pt-0"><?php esc_html_e( 'Mehr Erfahren', 'felixlodge' ) ?></span></a>
             </div>
         </div>
