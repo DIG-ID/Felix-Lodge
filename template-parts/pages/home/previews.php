@@ -2,7 +2,7 @@
     <div class="container-grid pt-[70px] md:pt-0">
         <h1 class="title-big"><?php the_field('section_previews_main_title_1'); ?></h1>
     </div>
-    <div class="container-grid pt-12 pb-20 xl:pt-8 xl:pb-28">
+    <div class="container-grid pt-12 pb-12 md:pb-20 xl:pt-8 xl:pb-28">
         <div class="col-span-1 col-start-2 md:col-start-3 xl:col-start-8">
             <div class="w-full max-w-[120px] border-t-2 inline-block border-black mt-4 xl:mt-6 mr-5"></div>
         </div>
@@ -10,8 +10,8 @@
             <h2 class="title"><?php the_field('section_previews_subtitle_1'); ?></h2>
         </div>
     </div>
-    <div class="container-grid pt-8 pb-32 xl:pb-52">
-        <div class="col-span-4 md:col-span-8 lg:col-span-8 xl:col-span-6 xl:col-start-2">
+    <div class="container-grid pb-32 xl:pb-52">
+        <div class="col-span-4 md:col-span-8 lg:col-span-8 xl:col-span-6 xl:col-start-2 mb-7 md:mb-0">
             <?php 
             $preview_image_1 = get_field('section_previews_preview_image_1');
             if( $preview_image_1 ) {
@@ -21,7 +21,7 @@
         </div>
         <div class="col-span-3 md:col-span-8 xl:col-span-3 col-start-2 md:col-start-1 xl:col-start-9 flex justify-center items-center flex-col">
             <div class="w-full md:pt-14 xl:pt-0 block md:grid xl:block md:grid-cols-8">
-                <p class="text-body md:max-w-md !mb-16 md:col-span-3"><?php the_field('section_previews_description_1'); ?></p>
+                <p class="text-body md:max-w-md !mb-12 xl:!mb-16 md:col-span-3"><?php the_field('section_previews_description_1'); ?></p>
                 <a href="<?php the_field('section_previews_button_link_1'); ?>" class="btn-primary md:col-span-3 md:col-start-5 max-h-11"><span class="pt-0"><?php esc_html_e( 'Mehr Erfahren', 'felixlodge' ) ?></span></a>
             </div>
         </div>
