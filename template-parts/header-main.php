@@ -6,7 +6,7 @@
 					<?php 
 					$main_logo = get_field('settings_website_logo', 'option');
 					if (!empty($main_logo)): ?>
-						<a href="<?php echo get_home_url(); ?>">
+						<a href="<?php echo get_home_url(); ?>" class="relative z-50">
 							<img src="<?php echo esc_url($main_logo['url']); ?>" alt="<?php echo esc_attr($main_logo['alt']); ?>" class="header-logo" />
 						</a>
 					<?php endif; ?>
