@@ -1,7 +1,7 @@
 <section id="section-winter" class="section-winter pt-0 md:pt-6 xl:pt-32 pb-0 md:pb-24 xl:pb-40 container-margins bg-white overflow-hidden">
     <div class="container-grid">
         <div class="col-span-3 md:col-span-4 xl:col-span-5">
-            <h1 class="title-big hyphenate mb-16 md:mb-16 xl:mb-0"><?php the_field( 'section_winter_title' ); ?></h1>
+            <h2 class="title-big hyphenate mb-16 md:mb-16 xl:mb-0"><?php the_field( 'section_winter_title' ); ?></h2>
         </div>
         <div class="col-span-3 md:col-span-3 xl:col-span-3 md:col-start-2 xl:col-start-7">
             <p class="section-descriptions"><?php the_field( 'section_winter_text_box_1' ); ?></p>

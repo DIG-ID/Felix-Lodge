@@ -1,6 +1,6 @@
 <section id="section-previews" class="section-previews xl:pb-80 xl:pt-0 container-margins bg-white overflow-hidden">
     <div class="container-grid pt-[70px] md:pt-0">
-        <h1 class="title-big"><?php the_field('section_previews_main_title_1'); ?></h1>
+        <h2 class="title-big"><?php the_field('section_previews_main_title_1'); ?></h2>
     </div>
     <div class="container-grid pt-12 pb-12 md:pb-20 xl:pt-8 xl:pb-28">
         <div class="col-span-1 col-start-2 md:col-start-3 xl:col-start-8">
@@ -29,7 +29,7 @@
 
     <div class="container-grid">
         <div class="col-span-4 md:col-span-8 xl:col-span-9 xl:col-start-3 xl:text-right">
-            <h1 class="title-big"><?php the_field('section_previews_main_title_2'); ?></h1>
+            <h2 class="title-big"><?php the_field('section_previews_main_title_2'); ?></h2>
         </div>
     </div>
     <div class="container-grid py-16 xl:py-10">

@@ -12,7 +12,7 @@
 	</div>
 	<div class="container-grid">
 		<div class="col-span-4 md:col-span-4 xl:col-span-3 xl:col-start-3 items-center flex order-2 xl:order-1">
-			<h1 class="text-body"><?php the_field( 'section_intro_description_2' ); ?></h1>
+			<h2 class="text-body"><?php the_field( 'section_intro_description_2' ); ?></h2>
 		</div>
 		<div class="col-span-4 md:col-span-8 xl:col-span-6 xl:col-start-7 order-1 xl:order-2 pt-14 md:pt-36 xl:pt-0 pb-10 md:pb-12 xl:pb-0">
 			<?php 
