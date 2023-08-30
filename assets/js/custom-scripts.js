@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
     const mobileMenu = document.querySelector(".mobile-menu");
     const menuIconImg = document.getElementById("menu-icon-img");
+    const scrollDiv = document.getElementById('scrollDiv');
 
     mobileMenuToggle.addEventListener("click", function () {
         if (mobileMenu.classList.contains("active")) {
@@ -20,19 +21,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     const header = document.getElementById('header-main'); // Replace with your actual header ID
-    let lastScrollPosition = 0;
+    let lastScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
-    window.addEventListener('scroll', () => {
-        const currentScrollPosition = window.scrollY;
-
+    // Function to handle the scrolling behavior
+    function handleScroll() {
+        const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+        
         if (currentScrollPosition > lastScrollPosition) {
-            // Scrolling down, add the shadow class
-            header.classList.add('header-with-shadow');
+            // Scrolling down
+            if (currentScrollPosition > 300) {
+                scrollDiv.classList.remove('hide-div');
+                header.classList.add('header-with-shadow');
+            }
         } else {
-            // Scrolling up, remove the shadow class
-            header.classList.remove('header-with-shadow');
+            // Scrolling up
+            if (currentScrollPosition <= 300) {
+                scrollDiv.classList.add('hide-div');
+                header.classList.remove('header-with-shadow');
+            }
         }
 
         lastScrollPosition = currentScrollPosition;
-    });
+    }
+    // Attach the scroll event listener
+    window.addEventListener('scroll', handleScroll);
 });
