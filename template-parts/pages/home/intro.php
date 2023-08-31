@@ -28,7 +28,7 @@
             <div class="col-span-2 text-body"><?php the_field('section_intro_text_box_1'); ?></div>
         </div>
         <div class="col-span-4 md:col-span-4 xl:col-span-3 col-start-1 md:col-start-5 xl:col-start-10 text-right">
-            <a href="<?php the_field( 'settings_simple_booking_url', 'options') ?>" target="_blank" class="btn-primary"><?php esc_html_e( 'Jetzt Buchen', 'felixlodge' ) ?></a>
+            <a href="<?php the_field( 'settings_simple_booking_url', 'options'); ?>" target="_blank" class="btn-primary"><?php esc_html_e( 'Jetzt Buchen', 'felixlodge' ); ?></a>
         </div>
     </div>
     <div class="container-grid pt-14 pb-20 md:py-5 xl:py-2">

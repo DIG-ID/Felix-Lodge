@@ -1,5 +1,5 @@
 <section id="section-intro" class="section-intro pt-16 md:pt-36 lg:pt-72 pb-0 md:pb-16 xl:pb-40 container-margins bg-white overflow-hidden">
-    <div class="container-grid pt-28">
+    <div class="container-grid pt-28 lg:pt-0">
         <div class="title-big xl:pb-40"><?php the_title(); ?></div>
     </div>
     <?php
