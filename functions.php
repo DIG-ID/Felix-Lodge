@@ -7,6 +7,7 @@ function felixlodge_theme_setup() {
 	register_nav_menus(
 		array(
 			'main'         => __( 'Main Menu', 'felixlodge' ),
+			'main_mobile'         => __( 'Main Menu - Mobile', 'felixlodge' ),
 			'footer'       => __( 'Footer Menu', 'felixlodge' ),
 			'footer_terms' => __( 'Footer Terms Menu', 'felixlodge' ),
 		)

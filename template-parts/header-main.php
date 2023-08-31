@@ -38,7 +38,7 @@
 		<?php
 		wp_nav_menu(
 			array(
-				'theme_location' => 'main',
+				'theme_location' => 'main_mobile',
 				'container'      => false,
 				'menu_class'     => 'main-menu-responsive block text-responsive-menu uppercase', // Adjust classes here
 				'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
