@@ -29,7 +29,7 @@
         </div>
     </div>
     <div class="container-grid">
-		<div class="col-span-4 md:col-span-4 xl:col-span-5 mt-16 2xl:-mt-16 md:-mt-[14rem] lg:-mt-[33rem] xl:mt-0">
+		<div class="col-span-4 md:col-span-4 xl:col-span-5 mt-16 2xl:-mt-16 md:-mt-[14rem] lg:-mt-[14rem] xl:mt-24">
 			<h2 class="title-big mb-16 hyphenate"><?php the_field('section_activities_title_2'); ?></h2>
 		</div>
 	</div>
