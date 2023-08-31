@@ -1,4 +1,4 @@
-<section class="section-content container-margins pt-36 md:pt-72">
+<section class="section-address-form container-margins pt-36 md:pt-72 mb-28 md:mb-32">
 	<div class="container-grid">
 		<div class="col-span-4 md:col-span-4 xl:col-span-6 grid grid-cols-4 md:grid-cols-6 xl:grid-cols-6 gap-x-5 lg:gap-x-4 xl:gap-x-8">
 			<div class="col-span-6">
@@ -26,14 +26,18 @@
 		</div>
 		<div class="col-span-4 md:col-span-4 xl:col-span-4 contact-form">
 			<div class="grid grid-cols-4 md:grid-cols-6 xl:grid-cols-6 gap-x-5 lg:gap-x-4 xl:gap-x-8">
-				<div class="col-span-1 xl:col-start-8">
+				<div class="col-span-1">
 					<div class="w-full max-w-[120px] border-b-2 inline-block border-black mt-3"></div>
 				</div>
 				<div class="col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3">
 					<div class="col-span-2 text-body"><?php the_field( 'form_title' ); ?></div>
 				</div>
+				<div class="col-start-2 col-span-3">
+					<?php echo do_shortcode( get_field( 'form_shortcode' ) ); ?>
+				</div>
 			</div>
-			<?php echo do_shortcode( get_field( 'form_shortcode' ) ); ?>
+
+			
 		</div>
 	</div>
 </section>

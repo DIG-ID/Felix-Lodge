@@ -18,186 +18,29 @@ function initMap( $el ) {
   // Define custom map style.
   var mapStyle = [
     {
-      "elementType": "geometry",
-      "stylers": [
-        {
-          "color": "#4d6059"
-        }
-      ]
-    },
-    {
-      "elementType": "labels.icon",
-      "stylers": [
-        {
-          "visibility": "off"
-        }
-      ]
-    },
-    {
-      "elementType": "labels.text.fill",
-      "stylers": [
-        {
-          "color": "#757575"
-        }
-      ]
-    },
-    {
-      "elementType": "labels.text.stroke",
-      "stylers": [
-        {
-          "color": "#4d6059"
-        }
-      ]
-    },
-    {
-      "featureType": "administrative",
-      "elementType": "geometry",
-      "stylers": [
-        {
-          "color": "#757575"
-        }
-      ]
-    },
-    {
-      "featureType": "administrative.country",
-      "elementType": "labels.text.fill",
-      "stylers": [
-        {
-          "color": "#9e9e9e"
-        }
-      ]
-    },
-    {
       "featureType": "administrative.land_parcel",
+      "elementType": "labels",
       "stylers": [
         {
           "visibility": "off"
-        }
-      ]
-    },
-    {
-      "featureType": "administrative.locality",
-      "elementType": "labels.text.fill",
-      "stylers": [
-        {
-          "color": "#bdbdbd"
         }
       ]
     },
     {
       "featureType": "poi",
-      "elementType": "labels.text.fill",
+      "elementType": "labels.text",
       "stylers": [
         {
-          "color": "#757575"
-        }
-      ]
-    },
-    {
-      "featureType": "poi.park",
-      "elementType": "geometry",
-      "stylers": [
-        {
-          "color": "#181818"
-        }
-      ]
-    },
-    {
-      "featureType": "poi.park",
-      "elementType": "labels.text.fill",
-      "stylers": [
-        {
-          "color": "#616161"
-        }
-      ]
-    },
-    {
-      "featureType": "poi.park",
-      "elementType": "labels.text.stroke",
-      "stylers": [
-        {
-          "color": "#1b1b1b"
-        }
-      ]
-    },
-    {
-      "featureType": "road",
-      "elementType": "geometry.fill",
-      "stylers": [
-        {
-          "color": "#2c2c2c"
-        }
-      ]
-    },
-    {
-      "featureType": "road",
-      "elementType": "labels.text.fill",
-      "stylers": [
-        {
-          "color": "#8a8a8a"
-        }
-      ]
-    },
-    {
-      "featureType": "road.arterial",
-      "elementType": "geometry",
-      "stylers": [
-        {
-          "color": "#373737"
-        }
-      ]
-    },
-    {
-      "featureType": "road.highway",
-      "elementType": "geometry",
-      "stylers": [
-        {
-          "color": "#3c3c3c"
-        }
-      ]
-    },
-    {
-      "featureType": "road.highway.controlled_access",
-      "elementType": "geometry",
-      "stylers": [
-        {
-          "color": "#4e4e4e"
+          "visibility": "off"
         }
       ]
     },
     {
       "featureType": "road.local",
-      "elementType": "labels.text.fill",
+      "elementType": "labels",
       "stylers": [
         {
-          "color": "#616161"
-        }
-      ]
-    },
-    {
-      "featureType": "transit",
-      "elementType": "labels.text.fill",
-      "stylers": [
-        {
-          "color": "#757575"
-        }
-      ]
-    },
-    {
-      "featureType": "water",
-      "elementType": "geometry",
-      "stylers": [
-        {
-          "color": "#000000"
-        }
-      ]
-    },
-    {
-      "featureType": "water",
-      "elementType": "labels.text.fill",
-      "stylers": [
-        {
-          "color": "#3d3d3d"
+          "visibility": "on"
         }
       ]
     }
@@ -205,7 +48,7 @@ function initMap( $el ) {
 
   // Create gerenic map.
   var mapArgs = {
-    zoom        : $el.data('zoom') || 16,
+    zoom        : $el.data('zoom') || 12,
     mapTypeId   : google.maps.MapTypeId.ROADMAP,
     fullscreenControl: false,
     streetViewControl: false,
