@@ -12,10 +12,10 @@
 	<div class="container-grid">
 
 		<div class="col-span-3 md:col-span-8 xl:col-span-4 xl:col-start-2 grid grid-cols-3 md:grid-cols-8 xl:grid-cols-4 gap-x-5 lg:gap-x-4 xl:gap-x-8 order-2 xl:order-1">
-			<div class="col-span-1 md:hidden">
+			<div class="col-span-1 hidden xl:block">
 				<div class="w-full max-w-[120px] border-b-2 inline-block border-black mt-3"></div>
 			</div>
-			<div class="col-span-3 md:col-span-7 xl:col-span-3 md:hidden">
+			<div class="col-span-3 md:col-span-7 xl:col-span-3 hidden xl:block">
 				<div class="title-subtitle mb-24"><?php the_field( 'find_us_title' ); ?></div>
 			</div>
 			<?php
