@@ -1,6 +1,6 @@
 <section id="section-intro" class="section-intro pt-16 md:pt-36 lg:pt-72 md:pb-0 container-margins bg-white overflow-hidden">
 	<div class="container-grid pt-28 lg:pt-0">
-		<div class="col-span-4 md:col-span-3 lg:col-span-4 xl:col-span-5">
+		<div class="col-span-4 md:col-span-3 lg:col-span-4 xl:col-span-6">
 			<h1 class="title-big mb-16 lg:mb-0 hyphenate"><?php the_field( 'section_intro_title' ); ?></h1>
 		</div>
 		<div class="col-span-1 xl:col-start-7">
