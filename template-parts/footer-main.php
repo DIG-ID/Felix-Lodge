@@ -47,7 +47,7 @@
 			?>
 			</div>
 		</div>
-		<div class="col-span-4 md:col-span-5 xl:col-span-3">
+		<div class="col-span-4 md:col-span-4 xl:col-span-3">
 			<p class="text-main-menu uppercase !mb-4 xl:mt-10"><?php esc_html_e( 'Newsletter', 'felixlodge' ) ?></p>
 			<p class="text-body xl:mt-14 !mb-0"><?php esc_html_e( 'Melden Sie sich für unseren Newsletter an.', 'felixlodge' ) ?></p>
 			<?php 
