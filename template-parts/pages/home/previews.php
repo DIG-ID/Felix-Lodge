@@ -22,7 +22,7 @@
         <div class="col-span-3 md:col-span-8 xl:col-span-3 col-start-2 md:col-start-1 xl:col-start-9 flex justify-center items-center flex-col">
             <div class="w-full md:pt-14 xl:pt-0 block md:grid xl:block md:grid-cols-8">
                 <p class="text-body md:max-w-md !mb-12 xl:!mb-16 md:col-span-3"><?php the_field('section_previews_description_1'); ?></p>
-                <a href="<?php the_field('section_previews_button_link_1'); ?>" class="btn-primary md:col-span-3 md:col-start-5 max-h-11"><span class="pt-0"><?php esc_html_e( 'Mehr Erfahren', 'felixlodge' ) ?></span></a>
+                <a href="<?php the_field('section_previews_button_link_1'); ?>" class="btn-primary md:col-span-3 md:col-start-5 max-h-11"><?php esc_html_e( 'Mehr Erfahren', 'felixlodge' ); ?></a>
             </div>
         </div>
     </div>
@@ -44,7 +44,7 @@
         <div class="col-span-3 md:col-span-8 xl:col-span-3 xl:col-start-2 flex justify-center items-center flex-col order-2 xl:order-1">
             <div class="w-full pt-7 md:pt-14 xl:pt-0 block md:grid xl:block md:grid-cols-8">
                 <p class="text-body lg:max-w-md !mb-12 xl:!mb-16 md:col-span-3"><?php the_field('section_previews_description_2'); ?></p>
-                <a href="<?php the_field('section_previews_button_link_2'); ?>" class="btn-primary md:col-start-5 max-h-11"><span class="pt-0"><?php esc_html_e( 'Mehr Erfahren', 'felixlodge' ) ?></span></a>
+                <a href="<?php the_field('section_previews_button_link_2'); ?>" class="btn-primary md:col-start-5 max-h-11"><?php esc_html_e( 'Mehr Erfahren', 'felixlodge' ); ?></a>
             </div>
         </div>
         <div class="col-span-4 md:col-span-8 xl:col-span-6 xl:col-start-6 order-1 xl:order-2">

@@ -30,6 +30,6 @@
 	endif; ?>
 	</div>
 	<div class="flex justify-center pb-40">
-		<a href="<?php the_permalink(); ?>" class="btn-primary"><?php esc_html_e( 'Mehr Erfahren', 'felixlodge' ); ?></a>
+		<a href="<?php the_field('section_services_button_link'); ?>" class="btn-primary"><?php esc_html_e( 'Mehr Erfahren', 'felixlodge' ); ?></a>
 	</div>
 </section>

@@ -11,7 +11,7 @@
             <div class="col-span-3 md:col-span-6 xl:col-span-3 md:col-start-2 xl:col-start-3">
                 <p class="section-descriptions mb-16 max-w-xs"><?php the_field( 'section_angebote_subtitle' ); ?></p>
                 <p class="text-body !mb-16 columns-1 md:columns-2 xl:columns-1"><?php the_field( 'section_angebote_description' ); ?></p>
-                <a href="<?php the_permalink(); ?>" class="btn-primary"><?php esc_html_e( 'Alle Angebote', 'felixlodge' ); ?></a>
+                <a href="<?php the_field('section_angebote_button_link'); ?>" class="btn-primary"><?php esc_html_e( 'Alle Angebote', 'felixlodge' ); ?></a>
             </div>
         </div>
         <div class="col-span-1 grid grid-cols-4 md:grid-cols-8 xl:grid-cols-6 gap-5 lg:gap-4 xl:gap-8 py-20 xl:py-32">

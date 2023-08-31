@@ -9,7 +9,7 @@
 				</div>
 				<p class="section-descriptions col-span-3 xl:col-span-4"><?php the_field('section_lodge_subtitle'); ?></p>
                 <p class="text-body col-span-4 col-start-2 !mb-16 hidden xl:block"><?php the_field('section_lodge_description'); ?></p>
-				<a href="<?php the_permalink(); ?>" class="btn-primary col-start-2"><?php esc_html_e( 'Zum Sortiment', 'felixlodge' ); ?></a>
+				<a href="<?php the_field('section_lodge_button_link'); ?>" class="btn-primary col-start-2"><?php esc_html_e( 'Zum Sortiment', 'felixlodge' ); ?></a>
 			</div>
 		</div>
 		<div class="col-span-2 md:col-span-3 xl:col-span-3 md:col-start-6 xl:col-start-8 order-1 md:order-2 pb-8 md:pb-0"> 
