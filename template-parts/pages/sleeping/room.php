@@ -56,7 +56,7 @@
 		</div>
 	</div>
 	<div class="text-center pt-20 md:pt-24 xl:pt-40 pb-20 md:pb-36 xl:pb-60">
-		<a href="<?php the_permalink(); ?>" class="btn-primary"><?php esc_html_e( 'Jetzt Buchen', 'felixlodge' ); ?></a>
+		<a href="<?php the_field( 'settings_simple_booking_url', 'options' ); ?>" class="btn-primary"><?php esc_html_e( 'Jetzt Buchen', 'felixlodge' ); ?></a>
 	</div>
 	<hr class="bg-black h-[2px]">
 </section>
