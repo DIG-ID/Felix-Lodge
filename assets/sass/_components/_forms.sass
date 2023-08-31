@@ -1,26 +1,27 @@
-.wpcf7
-  @apply max-w-xl
-  .wpcf7-form
-    .wpcf7-form-control-wrap
-      @apply block
-      .wpcf7-form-control
-        outline: 0
-        @apply w-full border border-solid border-black py-2 px-5 sm:py-4 sm:px-5
-    .wpcf7-text
-      @apply rounded-full text-base font-light text-black focus:outline-1 focus:outline-white bg-black
-    .wpcf7-textarea
-      @apply rounded-[2rem] sm:rounded-[3rem] text-base font-light text-black focus:outline-1 focus:outline-white bg-black
-      &::placeholder
-        @apply rounded-none
-    .wpcf7-submit
-      @apply text-button inline-flex items-center border-black border-2 rounded-full transition-all duration-200 ease-in px-4 sm:px-8 pt-2 pb-[0.2rem] float-right
-      &:hover
-        cursor: pointer
-        @apply bg-[#35453F]
-    .wpcf7-not-valid-tip
-      @apply font-sans text-sm mt-3 border border-solid inline-block px-5 py-3
-    .wpcf7-response-output
-      @apply m-0 mt-16 p-0 px-5 py-3 border font-sans text-sm
+.contact-form
+  .wpcf7
+    @apply max-w-full
+    .wpcf7-form
+      .wpcf7-form-control-wrap
+        @apply block
+        .wpcf7-form-control
+          outline: 0
+          @apply w-full border border-solid border-black py-2 px-5 sm:py-4 sm:px-5
+      .wpcf7-text
+        @apply rounded-full text-base font-light text-black focus:outline-1 focus:outline-white bg-black
+      .wpcf7-textarea
+        @apply bg-white text-base font-light text-black focus:outline-1 focus:outline-white
+        &::placeholder
+          @apply rounded-none
+      .wpcf7-submit
+        @apply text-button inline-flex items-center border-black border-2 rounded-full transition-all duration-200 ease-in px-4 sm:px-8 pt-2 pb-[0.2rem] float-right
+        &:hover
+          cursor: pointer
+          @apply bg-[#35453F]
+      .wpcf7-not-valid-tip
+        @apply font-sans text-sm mt-3 border border-solid inline-block px-5 py-3
+      .wpcf7-response-output
+        @apply m-0 mt-16 p-0 px-5 py-3 border font-sans text-sm
 
 .mc4wp-form-fields
   input[type="email"]
@@ -31,6 +32,7 @@
 .fancybox
   &__backdrop
     @apply bg-[#29332E] bg-opacity-90
+
 #form-popup
   z-index: 999
 
