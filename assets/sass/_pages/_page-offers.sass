@@ -1,0 +1,22 @@
+
+
+.card-offer-content
+  @apply h-[120px] md:h-fit transition-all duration-500
+
+.card-offer-content.open
+  @apply h-full
+
+.btn-offer-readmore
+  @apply transition-all duration-500
+  &::before
+    content: ''
+    @apply block absolute w-full h-[160px] sm:h-[60px] bg-gradient-to-t from-white to-white/0 left-0 right-0 bottom-[32px] sm:bottom-[47px] -z-[1] transition-all duration-500
+  svg
+    @apply transition-all duration-500 rotate-0
+
+.btn-offer-readmore.open
+  @apply mt-10
+  svg
+    @apply rotate-180
+  &::before
+    @apply bg-gradient-to-t from-white/0 to-white/0
