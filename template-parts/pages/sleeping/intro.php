@@ -11,6 +11,6 @@
 		</div>
 	</div>
 	<div class="text-center">
-		<a href="<?php the_field( 'settings_simple_booking_url', 'options' ); ?>" class="btn-moreinfo text-button"><span class="pt-1"><?php esc_html_e( 'Jetzt Buchen', 'felixlodge' ); ?></span></a>
+		<a href="<?php the_field( 'settings_simple_booking_url', 'options' ); ?>" class="btn-moreinfo text-button" target="_blank"><span class="pt-1"><?php esc_html_e( 'Jetzt Buchen', 'felixlodge' ); ?></span></a>
 	</div>
 </section>
