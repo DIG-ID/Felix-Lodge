@@ -4,7 +4,7 @@
 			<h2 class="title mb-4 md:mb-9 xl:mb-10 col-span-3 md:col-span-4 xl:col-span-12"><?php the_field( 'section_room_title' ); ?></h2>
 			<p class="text-body col-span-3 md:col-span-4 xl:col-span-12"><?php the_field( 'section_room_description' ); ?></p>
 		</div>
-		<div class="col-span-4 md:col-span-8 lg:col-span-8 xl:col-span-6 xl:col-start-7 order-1 xl:order-2 mb-9 xl:mob-0">
+		<div class="col-span-4 md:col-span-8 lg:col-span-8 xl:col-span-6 xl:col-start-7 order-1 xl:order-2 mb-20 xl:mb-0 relative">
 			<?php
 			$gallery = get_field( 'section_room_gallerie' );
 			if ( $gallery ) :
@@ -17,9 +17,9 @@
 							</a>
 						<?php endforeach; ?>
 					</div>
-					<div class="swiper-button-next"></div>
-					<div class="swiper-button-prev"></div>
 				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
 				<?php
 			endif;
 			?>
