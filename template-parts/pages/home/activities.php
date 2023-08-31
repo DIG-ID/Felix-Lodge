@@ -17,7 +17,7 @@
     <div class="container-grid pt-20 xl:pt-40">
         <div class="col-span-3 col-start-2 md:col-start-6 xl:col-start-2 md:-mt-[27rem] lg:-mt-[33rem] xl:mt-0">
             <p class="text-body !mb-16"><?php the_field( 'section_activities_description_1' ); ?></p>
-            <a href="<?php the_field('section_activities_button_link'); ?>" class="btn-primary !hidden xl:!block"><?php esc_html_e( 'Mehr Erfahren', 'felixlodge' ); ?></a>
+            <a href="<?php the_field('section_activities_button_link_1'); ?>" class="btn-primary !hidden xl:!block"><?php esc_html_e( 'Mehr Erfahren', 'felixlodge' ); ?></a>
         </div>
         <div class="col-span-2 md:col-span-3 xl:col-span-3 col-start-2 md:col-start-6 xl:col-start-8">
             <?php 
@@ -52,7 +52,7 @@
         </div>
         <div class="col-span-3 md:col-span-3 xl:col-span-3 md:col-start-6 xl:col-start-8 flex flex-col justify-end">
             <p class="text-body !mb-16"><?php the_field( 'section_activities_description_2' ); ?></p>
-            <a href="<?php the_field('section_activities_button_link'); ?>" class="btn-primary"><?php esc_html_e( 'Mehr Erfahren', 'felixlodge' ); ?></a>
+            <a href="<?php the_field('section_activities_button_link_2'); ?>" class="btn-primary"><?php esc_html_e( 'Mehr Erfahren', 'felixlodge' ); ?></a>
         </div>
     </div>
 </section>
