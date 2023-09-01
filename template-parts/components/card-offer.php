@@ -16,11 +16,8 @@
 		<?php
 		$offer_link = get_field( 'link' );
 		if ( $offer_link ) :
-			$link_url    = $offer_link['url'];
-			$link_title  = $offer_link['title'];
-			$link_target = $offer_link['target'] ? $offer_link['target'] : '_self';
 			?>
-			<a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>" class="btn-offer btn-primary inline-block mx-auto md:mx-0 md:self-start"><?php echo esc_html( $link_title ); ?></a>
+			<a href="<?php echo esc_attr( $offer_link ); ?>" class="btn-offer btn-primary inline-block mx-auto md:mx-0 md:self-start"><?php esc_html_e( 'anfrage senden', 'felixlodge' ); ?></a>
 			<?php
 		endif;
 		?>

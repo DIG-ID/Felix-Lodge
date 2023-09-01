@@ -13,7 +13,7 @@
 		<?php
 		$additional_notes = get_sub_field( 'additional_notes' );
 		if ( $additional_notes ) :
-			echo '<div class="card-offer-notes col-span-3 pt-2 md:pt-0 md:col-span-3 relative md:ml-8 pl-8 border-black before:content-[\'\'] before:block before:absolute before:top-0 before:left-0 before:border-l before:border-black before:h-[60px]"><p class="title-subtitle break-words">' . $additional_notes . '</p></div>';
+			echo '<div class="card-offer-notes col-span-3 pt-2 md:pt-0 md:col-span-3 relative md:ml-6 pl-6 border-black before:content-[\'\'] before:block before:absolute before:top-0 before:left-0 before:border-l before:border-black before:h-[60px]"><p class="title-subtitle break-words">' . $additional_notes . '</p></div>';
 		endif;
 		?>
 	</div>
