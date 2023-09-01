@@ -8,7 +8,7 @@
     <?php
     if( have_rows('team_list') ):
     while( have_rows('team_list') ) : the_row(); ?>
-        <div class="col-span-3 md:col-span-4 xl:col-span-4">
+        <div class="col-span-3 md:col-span-4 xl:col-span-4 mb-10 md:mb-0">
             <?php 
 			$image = get_sub_field('image');
 			if( $image ) {

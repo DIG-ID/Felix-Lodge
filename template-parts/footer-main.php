@@ -47,9 +47,9 @@
 			?>
 			</div>
 		</div>
-		<div class="col-span-4 md:col-span-4 xl:col-span-3">
+		<div class="col-span-4 md:col-span-4 xl:col-span-3 mt-9 md:mt-16 xl:mt-0">
 			<p class="text-main-menu uppercase !mb-4 xl:mt-10"><?php esc_html_e( 'Newsletter', 'felixlodge' ) ?></p>
-			<p class="text-body xl:mt-14 !mb-0"><?php esc_html_e( 'Melden Sie sich für unseren Newsletter an.', 'felixlodge' ) ?></p>
+			<p class="text-body xl:mt-10 !mb-0"><?php esc_html_e( 'Melden Sie sich für unseren Newsletter an.', 'felixlodge' ) ?></p>
 			<?php 
 			$form_shortcode = get_field('settings_newsletter_form_shortcode', 'option');
 			echo do_shortcode($form_shortcode);
