@@ -15,7 +15,7 @@
 	<div class="container-grid lg:px-2">
 		<div class="col-span-4 md:col-span-8 xl:col-span-12 text-center">
 			<p class="text-body !mb-10"><?php esc_html_e( 'Sie können auf die Schaltfläche unten klicken, um zur Homepage zurückzukehren.', 'felixlodge' ); ?></p>
-			<a href="<?php echo esc_url( get_site_url( 'https' ) ); ?>" class="btn-primary" type="button"><?php esc_html_e( 'Zur Website gehen', 'felixlodge' ) ?></a>
+			<a href="<?php echo esc_url( get_site_url( 'https' ) ); ?>" class="btn-primary" type="button"><?php esc_html_e( 'Zur Webseite gehen', 'felixlodge' ) ?></a>
 		</div>
 	</div>
 </section>
