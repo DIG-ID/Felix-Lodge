@@ -4,7 +4,7 @@
 	</figure>
 	<div class="col-span-4 md:col-span-6 xl:col-span-5 flex flex-col justify-between">
 		<div class="card-offer-wrapper">
-			<?php the_title( '<h3 class="font-sans text-base md:text-xl xl:text-3xl text-black leading-7 tracking-[0.56px] line-clamp-2 mb-10">', '</h3>' ); ?>
+			<?php the_title( '<h2 class="font-sans text-base md:text-xl xl:text-3xl text-black leading-7 tracking-[0.56px] line-clamp-2 mb-10">', '</h2>' ); ?>
 			<div class="card-offer-content mb-6 md:mb-10 xl:mb-20 overflow-hidden"><?php echo wp_kses_post( get_the_content() ); ?></div>
 		</div>
 		<button class="btn-offer-readmore relative z-10 flex items-center justify-center text-center md:hidden md:invisible mb-10">
