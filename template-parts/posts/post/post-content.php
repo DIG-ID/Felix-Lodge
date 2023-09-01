@@ -1,4 +1,4 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'overflow-hidden py-8 lg:py-20' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'pt-16 md:pt-36 lg:pt-72 md:pb-0 container-margins bg-white overflow-hidden' ); ?>>
 	<div class="container mx-auto px-8 xl:px-0 grid grid-cols-1 lg:grid-cols-12">
 		<div class="post-content-wrapper col-span-10">
 			<time datetime="<?php echo get_the_date('c'); ?>" itemprop="datePublished" class="block font-sans text-sm text-text-grey font-normal whitespace-nowrap mb-2"><?php echo get_the_date(); ?></time>
