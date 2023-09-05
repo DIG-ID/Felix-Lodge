@@ -13,7 +13,7 @@ echo '<div class="container-grid">';
 echo '<div class="title pb-14">' . $category->name . '</div>';
 echo '</div>';
 echo '<hr class="border-t-2 border-black">';
-echo '<div class="container-grid xl:pt-14 xl:pb-56">';
+echo '<div class="container-grid xl:pt-14">';
 
 $posts_query = new WP_Query([
     'post_type' => $custom_post_type_slug,
@@ -59,7 +59,7 @@ if ($posts_query->have_posts()) { ?>
                 endif;
                 ?>
                 </div>
-                <div class="col-span-4 md:col-span-4 xl:col-span-3">
+                <div class="col-span-4 md:col-span-4 xl:col-span-3 relative">
                     <h2 class="title-subtitle min-h-[110px] xl:max-h-[110px]"><?php the_title(); ?></h2>
                     <p class="text-body !mb-0"><?php esc_html_e( 'Preis', 'felixlodge' ) ?></p>
                     <p class="title mb-5"><?php the_field( 'general_price' ); ?></p>
@@ -67,10 +67,10 @@ if ($posts_query->have_posts()) { ?>
                         <a href="#" class="text-body mr-9 tab-link active" data-target="<?php echo $tab_description_id; ?>"><?php esc_html_e( 'Beschreibung', 'felixlodge' ) ?></a> 
                         <a href="#" class="text-body tab-link" data-target="<?php echo $tab_specifications_id; ?>"><?php esc_html_e( 'Spezifikationen', 'felixlodge' ) ?></a>
                     </div>
-                    <div id="<?php echo $tab_description_id; ?>" class="tab-content active">
+                    <div id="<?php echo $tab_description_id; ?>" class="tab-content md:absolute active">
                         <?php the_field( 'general_description' ); ?>
                     </div>
-                    <div id="<?php echo $tab_specifications_id; ?>" class="tab-content" style="display: none;">
+                    <div id="<?php echo $tab_specifications_id; ?>" class="tab-content md:absolute" style="display: none;">
                         <ul class="list-disc pl-6 mb-9">
                         <?php
                         if( have_rows('specifications_specifications_list') ):
