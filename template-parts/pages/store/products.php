@@ -61,11 +61,11 @@ if ($posts_query->have_posts()) { ?>
                 </div>
                 <div class="col-span-4 md:col-span-4 xl:col-span-3">
                     <h2 class="title-subtitle min-h-[110px] xl:max-h-[110px]"><?php the_title(); ?></h2>
-                    <p class="text-body !mb-0"><?php esc_html_e( 'Price', 'felixlodge' ) ?></p>
+                    <p class="text-body !mb-0"><?php esc_html_e( 'Preis', 'felixlodge' ) ?></p>
                     <p class="title mb-5"><?php the_field( 'general_price' ); ?></p>
                     <div class="tabs-wrapper pb-8">
-                        <a href="#" class="text-body mr-9 tab-link active" data-target="<?php echo $tab_description_id; ?>"><?php esc_html_e( 'Description', 'felixlodge' ) ?></a> 
-                        <a href="#" class="text-body tab-link" data-target="<?php echo $tab_specifications_id; ?>"><?php esc_html_e( 'Specifications', 'felixlodge' ) ?></a>
+                        <a href="#" class="text-body mr-9 tab-link active" data-target="<?php echo $tab_description_id; ?>"><?php esc_html_e( 'Beschreibung', 'felixlodge' ) ?></a> 
+                        <a href="#" class="text-body tab-link" data-target="<?php echo $tab_specifications_id; ?>"><?php esc_html_e( 'Spezifikationen', 'felixlodge' ) ?></a>
                     </div>
                     <div id="<?php echo $tab_description_id; ?>" class="tab-content active">
                         <?php the_field( 'general_description' ); ?>
