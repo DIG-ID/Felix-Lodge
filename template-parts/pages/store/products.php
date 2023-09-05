@@ -10,10 +10,10 @@ $categories = get_terms([
 
 foreach ($categories as $category) {
 echo '<div class="container-grid">';
-echo '<div class="title pb-14">' . $category->name . '</div>';
+echo '<div class="title pb-7 xl:pb-14">' . $category->name . '</div>';
 echo '</div>';
 echo '<hr class="border-t-2 border-black">';
-echo '<div class="container-grid xl:pt-14">';
+echo '<div class="container-grid pt-4 xl:pt-14">';
 
 $posts_query = new WP_Query([
     'post_type' => $custom_post_type_slug,
@@ -37,7 +37,7 @@ if ($posts_query->have_posts()) { ?>
         $tab_description_id = 'description-' . get_the_ID();
         $tab_specifications_id = 'specifications-' . get_the_ID();
         ?>
-        <div class="col-span-4 md:col-span-4 xl:col-span-6 pb-80">
+        <div class="col-span-4 md:col-span-4 xl:col-span-6 pb-20 md:pb-96 xl:pb-80">
             <div id="<?php echo $unique_id; ?>" class="grid grid-cols-4 md:grid-cols-4 xl:grid-cols-6 gap-x-5 lg:gap-x-4 xl:gap-x-8">
                 <div id="product-img" class="relative col-span-4 md:col-span-4 xl:col-span-3">
                     <?php
@@ -65,7 +65,7 @@ if ($posts_query->have_posts()) { ?>
                     ?>
                 </div>
                 <div class="col-span-4 md:col-span-4 xl:col-span-3 relative">
-                    <h2 class="title-subtitle min-h-[110px] xl:max-h-[110px]"><?php the_title(); ?></h2>
+                    <h2 class="title-subtitle min-h-[110px] xl:max-h-[110px] pt-8 xl:pt-0"><?php the_title(); ?></h2>
                     <p class="text-body !mb-0"><?php esc_html_e( 'Preis', 'felixlodge' ) ?></p>
                     <p class="title mb-5"><?php the_field( 'general_price' ); ?></p>
                     <div class="tabs-wrapper pb-8">
