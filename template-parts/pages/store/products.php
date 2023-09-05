@@ -39,25 +39,30 @@ if ($posts_query->have_posts()) { ?>
         ?>
         <div class="col-span-4 md:col-span-4 xl:col-span-6 pb-80">
             <div id="<?php echo $unique_id; ?>" class="grid grid-cols-4 md:grid-cols-4 xl:grid-cols-6 gap-x-5 lg:gap-x-4 xl:gap-x-8">
-                <div id="product-img" class="col-span-4 md:col-span-4 xl:col-span-3">
-                <?php
-                $gallery = get_field( 'general_product_images' );
-                if ( $gallery ) :
-                    ?>
-                    <div class="swiper swiper-store-thumbs">
-                        <div class="swiper-wrapper">
-                            <?php foreach ( $gallery as $gallery_id ) : ?>
-                                <div class="swiper-slide" href="<?php echo esc_url( wp_get_attachment_image_url( $gallery_id, 'square-image' ) ); ?>">
-                                    <?php echo wp_get_attachment_image( $gallery_id, 'square-image' ); ?>
-                                </div>
-                            <?php endforeach; ?>
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
+                <div id="product-img" class="relative col-span-4 md:col-span-4 xl:col-span-3">
                     <?php
-                endif;
-                ?>
+                    $gallery = get_field( 'general_product_images' );
+                    if ( $gallery ) :
+                        ?>
+                        <?php
+                        if( get_field('general_customizable') ) { ?>
+                            <div class="customizable__label top-5 left-5 absolute"><?php esc_html_e( 'Anpassbar', 'felixlodge' ) ?></div>
+                        <?php } ?>
+                        
+                        <div class="swiper swiper-store-thumbs">
+                            <div class="swiper-wrapper">
+                                <?php foreach ( $gallery as $gallery_id ) : ?>
+                                    <div class="swiper-slide" href="<?php echo esc_url( wp_get_attachment_image_url( $gallery_id, 'square-image' ) ); ?>">
+                                        <?php echo wp_get_attachment_image( $gallery_id, 'square-image' ); ?>
+                                    </div>
+                                <?php endforeach; ?>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <?php
+                    endif;
+                    ?>
                 </div>
                 <div class="col-span-4 md:col-span-4 xl:col-span-3 relative">
                     <h2 class="title-subtitle min-h-[110px] xl:max-h-[110px]"><?php the_title(); ?></h2>
