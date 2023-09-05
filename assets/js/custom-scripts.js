@@ -45,4 +45,47 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     // Attach the scroll event listener
     window.addEventListener('scroll', handleScroll);
+
+
+    // Tabs control in Store page
+    const tabLinks = document.querySelectorAll(".tab-link");
+
+    tabLinks.forEach((link) => {
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            // Find the parent product element
+            const productElement = link.closest(".col-span-4");
+            if (!productElement) return; // If not found, exit
+
+            // Find the target ID from the data-target attribute
+            const targetId = link.getAttribute("data-target");
+            const targetContent = productElement.querySelector(`#${targetId}`);
+
+            if (targetContent) {
+                // Remove the "active" class from all tab links within the same product
+                const tabLinksInProduct = productElement.querySelectorAll(".tab-link");
+                tabLinksInProduct.forEach((tabLink) => {
+                    tabLink.classList.remove("active");
+                });
+
+                // Add the "active" class to the clicked tab link
+                link.classList.add("active");
+                
+                // Hide all tab contents within the same product
+                const tabContents = productElement.querySelectorAll(".tab-content");
+                tabContents.forEach((content) => {
+                    content.style.opacity = 0;
+                    content.style.display = "none";
+                });
+
+                // Show the selected tab content
+                targetContent.style.display = "block";
+                // Trigger reflow to apply the initial opacity
+                targetContent.offsetHeight;
+                targetContent.style.opacity = 1;
+            }
+        });
+    });
+
 });

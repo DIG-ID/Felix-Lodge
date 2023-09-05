@@ -1,0 +1,16 @@
+#product-img
+    img
+        @apply w-full
+
+.tab-content
+    display: none
+    opacity: 0
+    transition: opacity 0.3s ease-in-out
+    &.active
+        display: block
+        opacity: 1
+
+.tab-link
+    @apply pb-2
+    &.active
+        border-bottom: 3px solid black

@@ -19,15 +19,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
-    if (document.body.classList.contains("page-template-page-home")) {
+    if (document.body.classList.contains("page-template-page-store")) {
 
-      const agendaEventsSwiper = new Swiper('.swiper-angebote-home', {
-        pagination: {
-          el: '.swiper-pagination-angebote',
-          clickable: true,
-          renderBullet: function (index, className) {
-            return '<span class="' + className + ' font-titles text-white text-3xl">' + (index + 1) + '</span>';
-          },
+      const homeImages = new Swiper(".swiper-store-thumbs", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
       });
 
