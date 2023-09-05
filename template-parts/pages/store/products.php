@@ -46,7 +46,7 @@ if ($posts_query->have_posts()) { ?>
                         ?>
                         <?php
                         if( get_field('general_customizable') ) { ?>
-                            <div class="customizable__label top-5 left-5 absolute"><?php esc_html_e( 'Anpassbar', 'felixlodge' ) ?></div>
+                            <div class="customizable__label top-3 left-3 md:top-5 md:left-5 absolute"><?php esc_html_e( 'Anpassbar', 'felixlodge' ) ?></div>
                         <?php } ?>
                         
                         <div class="swiper swiper-store-thumbs">
