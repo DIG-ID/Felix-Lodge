@@ -2,9 +2,9 @@
 	<div class="footer-content pb-8 pt-24 container-grid border-t-2 border-solid border-black">
 		<div class="col-span-1 xl:col-start-2">
 		<?php 
-		$footer_logo = get_field('settings_website_logo', 'option');
-		if( !empty( $footer_logo ) ): ?>
-			<img src="<?php echo esc_url($footer_logo['url']); ?>" alt="<?php echo esc_attr($footer_logo['alt']); ?>" class="max-w-full" />
+		$footer_logo = get_field( 'settings_website_logo', 'option' );
+		if ( ! empty( $footer_logo ) ) : ?>
+			<img src="<?php echo esc_url( $footer_logo['url'] ); ?>" alt="<?php echo esc_attr( $footer_logo['alt'] ); ?>" class="max-w-full" />
 		<?php endif; ?>
 		</div>
 	</div>
@@ -51,8 +51,8 @@
 			<p class="text-main-menu uppercase !mb-4 xl:mt-10"><?php esc_html_e( 'Newsletter', 'felixlodge' ) ?></p>
 			<p class="text-body xl:mt-10 !mb-0"><?php esc_html_e( 'Melden Sie sich für unseren Newsletter an.', 'felixlodge' ) ?></p>
 			<?php 
-			$form_shortcode = get_field('settings_newsletter_form_shortcode', 'option');
-			echo do_shortcode($form_shortcode);
+			$form_shortcode = get_field( 'settings_newsletter_form_shortcode', 'option' );
+			echo do_shortcode( $form_shortcode );
 			?>
 		</div>
 	</div>

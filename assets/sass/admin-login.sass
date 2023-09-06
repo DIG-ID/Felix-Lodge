@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@200;300&display=swap')
 
-
-//Color variables
-$main-white: #FFFFFF
-
 body
-  background-color: $main-white
+  background-color: #FFF
   background-position: bottom
   background-position-y: 140%
   background-repeat: no-repeat
@@ -20,11 +16,11 @@ body
   .message
     color: #000
   h1
-    margin-bottom: 20px
+    margin-bottom: 40px
     a
-      width: 180px
-      height: 60px
-      background-size: 180px 60px
+      width: 100px
+      height: 100px
+      background-size: 100px 100px
       &:focus
         box-shadow: none
 
@@ -33,7 +29,7 @@ body
     box-shadow: none
     border: 1px solid #000
     padding: 40px
-    background-color: $main-white
+    background-color: #FFF
     label
       color: #000
       text-transform: uppercase
@@ -43,7 +39,7 @@ body
       border: none
       border-radius: 0px
       box-shadow: none
-      background-color: $main-white
+      background-color: #FFF
       border-bottom: 1px solid #000
       font-size: 0.9rem
       font-weight: normal
@@ -64,20 +60,29 @@ body
       font-weight: 700
       transition: all .3s ease-in-out
       &:hover
-        background: #fff
+        background: #000
+        color: #FFF
   #backtoblog, #nav
     text-align: center
-    color: $main-white
+    color: #000
     a
-      color: $main-white
+      color: rgba(0, 0, 0, 1)
       font-weight: 600
+      transition: all 0.5s ease-in-out
+      &:hover
+        color: rgba(0, 0, 0, 0.5)
 
   input:-webkit-autofill
     -webkit-box-shadow: 0 0 0 30px white inset
     -webkit-text-fill-color: #000 !important
 
-.privacy-policy-link
-  color: $main-white
+.privacy-policy-page-link
+  .privacy-policy-link
+    color: #000
+    text-decoration: none
+    font-family: 'n27-regular-webfont', sans-serif
+    &:hover
+      color: rgba(0, 0, 0, 0.5)
 
 .wpml-login-ls
   form#wpml-login-ls-form

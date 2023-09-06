@@ -3,18 +3,18 @@
 		<div class="navigation-main-content flex flex-col sm:flex-row col-span-4 md:col-span-8 xl:col-span-12">
 			<div class="w-full mx-auto flex flex-wrap items-center justify-center px-0 py-[2.6rem]">
 				<div class="header-logo-wrapper absolute mb-4 sm:mb-0">
-					<?php 
-					$main_logo = get_field('settings_website_logo', 'option');
-					if (!empty($main_logo)): ?>
+					<?php
+					$main_logo = get_field( 'settings_website_logo', 'option' );
+					if ( ! empty( $main_logo ) ) : ?>
 						<a href="<?php echo get_home_url(); ?>" class="relative z-50">
-							<img src="<?php echo esc_url($main_logo['url']); ?>" alt="<?php echo esc_attr($main_logo['alt']); ?>" class="header-logo" />
+							<img src="<?php echo esc_url( $main_logo['url'] ); ?>" alt="<?php echo esc_attr( $main_logo['alt'] ); ?>" class="header-logo" />
 						</a>
 					<?php endif; ?>
 				</div>
 
 				<div class="w-full relative -top-[26px] sm:-top-[18px] xl:top-0">
 					<button id="mobile-menu-toggle" class="mobile-menu-toggle float-right">
-						<span class="menu-icon"><img id="menu-icon-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/burger-menu.svg" title="mobile menu" alt="mobile menu"></span>
+						<span class="menu-icon"><img id="menu-icon-img" src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/assets/images/burger-menu.svg" title="mobile menu" alt="mobile menu"></span>
 					</button>
 					<?php
 					wp_nav_menu(
@@ -46,5 +46,12 @@
 			)
 		);
 		?>
+		<div class="wpml-language-switcher wpml-language-switcher-normal xl:hidden">
+			<?php do_action( 'wpml_add_language_selector' ); ?>
+		</div>
 	</div>
 </header>
+
+<div class="wpml-language-switcher wpml-language-switcher-floating hidden xl:block">
+	<?php do_action( 'wpml_add_language_selector' ); ?>
+</div>
