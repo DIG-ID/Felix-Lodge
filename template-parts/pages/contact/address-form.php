@@ -19,9 +19,9 @@
 					<div class="w-full max-w-[120px] border-b-2 inline-block border-black mt-3"></div>
 				</div>
 				<div class="col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3">
-					<div class="col-span-2 text-body"><?php the_field( 'form_title' ); ?></div>
+					<div class="col-span-2 section-descriptions"><?php the_field( 'form_title' ); ?></div>
 				</div>
-				<div class="xl:col-start-2 col-span-4 md:col-span-4 xl:col-span-3">
+				<div class="xl:col-start-2 col-span-4 md:col-span-4 xl:col-span-3 pt-44 md:pt-0">
 					<?php echo do_shortcode( get_field( 'form_shortcode' ) ); ?>
 				</div>
 			</div>

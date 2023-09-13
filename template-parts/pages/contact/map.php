@@ -38,7 +38,7 @@
 			$location = get_field( 'find_us_map' );
 			if ( $location ) :
 				?>
-				<div class="acf-map mb-14 md:mb-20 xl:mb-0" data-zoom="16">
+				<div class="acf-map mb-14 md:mb-20 xl:mb-0 max-h-96 md:max-h-none" data-zoom="16">
 					<div class="marker" data-lat="<?php echo esc_attr( $location['lat'] ); ?>" data-lng="<?php echo esc_attr( $location['lng'] ); ?>"></div>
 				</div>
 				<?php
