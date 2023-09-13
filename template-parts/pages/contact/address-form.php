@@ -21,7 +21,7 @@
 				<div class="col-span-3 md:col-span-3 lg:col-span-3 xl:col-span-3">
 					<div class="col-span-2 section-descriptions"><?php the_field( 'form_title' ); ?></div>
 				</div>
-				<div class="xl:col-start-2 col-span-4 md:col-span-4 xl:col-span-3 pt-44 md:pt-0">
+				<div class="xl:col-start-2 col-span-4 md:col-span-4 xl:col-span-3 pt-0 xl:pt-44">
 					<?php echo do_shortcode( get_field( 'form_shortcode' ) ); ?>
 				</div>
 			</div>
