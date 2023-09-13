@@ -9,7 +9,7 @@
 			<p class="section-descriptions col-span-4 xl:max-w-sm"><?php the_field('section_services_subtitle'); ?></p>
 		</div>
 	</div>
-	<div class="grid grid-cols-1 md:grid-cols-4 py-28 gap-16 text-center lg:px-[20%]">
+	<div class="grid grid-cols-1 md:grid-cols-4 pt-28 pb-8 xl:py-28 gap-16 text-center lg:px-[20%]">
 	<?php
 	if( have_rows('section_services_services_list') ):
 	while( have_rows('section_services_services_list') ) : the_row(); ?>
@@ -29,7 +29,7 @@
 	<?php endwhile;
 	endif; ?>
 	</div>
-	<div class="flex justify-center pb-40">
+	<div class="flex justify-center pb-24 xl:pb-40">
 		<a href="<?php the_field('section_services_button_link'); ?>" class="btn-primary"><?php esc_html_e( 'Mehr Erfahren', 'felixlodge' ); ?></a>
 	</div>
 </section>
