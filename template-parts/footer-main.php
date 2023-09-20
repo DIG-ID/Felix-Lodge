@@ -18,7 +18,7 @@
 				<br>
 				<a class="text-main-menu" href="mailto:<?php the_field( 'contact_email', 'option' ) ?>"><?php the_field( 'contact_email', 'option' ) ?></a>
 			</p>
-			<div class="flex items-center mt-10">
+			<div class="flex items-center mt-10 mb-10 lg:mb-0">
 				<?php
 				$facebook = get_field( 'socials_facebook_url', 'options' );
 				if ( $facebook ) :
