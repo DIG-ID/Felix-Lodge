@@ -41,7 +41,7 @@
 				if ( $room_details ) :
 					?><p class="font-sans font-normal italic text-large text-black mb-12"><?php echo esc_html( $room_details['title'] ); ?></p><?php
 					if ( have_rows( 'section_room_details_detail_list' ) ) :
-						?><ul class="list-disc ml-10"><?php
+						?><ul class="list-disc ml-5"><?php
 						// Loop through rows.
 						while ( have_rows( 'section_room_details_detail_list' ) ) :
 							the_row();
@@ -55,8 +55,8 @@
 
 		</div>
 	</div>
-	<div class="text-center pt-20 md:pt-24 xl:pt-40 pb-20 md:pb-36 xl:pb-60">
-		<a href="<?php the_field( 'settings_simple_booking_url', 'options' ); ?>" class="btn-primary" target="_blank"><?php esc_html_e( 'Jetzt Buchen', 'felixlodge' ); ?></a>
+	<div class="text-center pt-10 md:pt-24 xl:pt-40 pb-20 md:pb-36 xl:pb-60">
+		<a href="<?php the_field( 'settings_simple_booking_url', 'options' ); ?>" class="btn-primary !hidden" target="_blank"><?php esc_html_e( 'Jetzt Buchen', 'felixlodge' ); ?></a>
 	</div>
 	<hr class="bg-black h-[2px]">
 </section>
