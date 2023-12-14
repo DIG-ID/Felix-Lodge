@@ -1,5 +1,5 @@
 <footer class="footer-main pb-16 container-margins bg-white">
-	<div class="footer-content pb-8 pt-24 container-grid border-t-2 border-solid border-black">
+	<div class="footer-content pb-8 pt-12 md:pt-24 container-grid border-t-2 border-solid border-black">
 		<div class="col-span-1 xl:col-start-2">
 		<?php 
 		$footer_logo = get_field( 'settings_website_logo', 'option' );
