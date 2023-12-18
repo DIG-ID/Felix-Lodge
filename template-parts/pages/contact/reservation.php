@@ -5,7 +5,7 @@
 				<div class="w-full max-w-[120px] border-b-2 inline-block border-black mt-3"></div>
 			</div>
 			<div class="col-span-3 md:col-span-7 xl:col-span-5">
-				<div class="title-subtitle"><?php the_field( 'reservation_title' ); ?></div>
+				<div class="title-subtitle md:max-w-lg"><?php the_field( 'reservation_title' ); ?></div>
 			</div>
 		</div>
 	</div>

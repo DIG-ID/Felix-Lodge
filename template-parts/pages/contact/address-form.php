@@ -17,9 +17,9 @@
 			
 			<div class="col-span-4 md:col-span-4 xl:col-span-5 xl:col-start-2 mb-24 md:mb-0">
 				<h3 class="section-descriptions uppercase mb-6"><?php esc_html_e( 'Adresse', 'felixlodge' ); ?></h3>
-				<p class="section-descriptions mb-6"><?php the_field( 'contact_address', 'option' ) ?></p>
+				<p class="section-descriptions mb-16 md:mb-6"><?php the_field( 'contact_address', 'option' ) ?></p>
 				<h3 class="section-descriptions uppercase mb-6"><?php esc_html_e( 'Email', 'felixlodge'  ); ?></h3>
-				<a class="section-descriptions mb-6 inline-block" href="mailto:<?php the_field( 'contact_email', 'option' ) ?>"><?php the_field( 'contact_email', 'option' ) ?></a>
+				<a class="section-descriptions mb-16 md:mb-6 inline-block" href="mailto:<?php the_field( 'contact_email', 'option' ) ?>"><?php the_field( 'contact_email', 'option' ) ?></a>
 				<h3 class="section-descriptions uppercase mb-6"><?php esc_html_e( 'Phone', 'felixlodge'  ); ?></h3>
 				<a class="section-descriptions inline-block" href="tel:<?php the_field( 'contact_phone_number', 'option' ) ?>"><?php the_field( 'contact_phone_number', 'option' ) ?></a>
 			</div>
