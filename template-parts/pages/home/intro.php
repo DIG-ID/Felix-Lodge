@@ -3,13 +3,23 @@
         <div class="col-span-4 md:col-span-8 xl:col-span-12">
             <?php 
             $images = get_field('section_intro_image_slider');
-            $size = 'home-header'; // (thumbnail, medium, large, full or custom size)
+            $size = 'home-header';
+            $size_mobile = 'home-preview'; 
             if( $images ): ?>
-                <div class="swiper swiper-header-home">
+                <div class="swiper swiper-header-home hidden md:block">
                     <div class="swiper-wrapper">
                     <?php foreach( $images as $image_id ): ?>
                         <div class="swiper-slide">
                             <?php echo wp_get_attachment_image( $image_id, $size ); ?>
+                            </div>
+                    <?php endforeach; ?>
+                    </div>
+				</div>
+                <div class="swiper swiper-header-home block md:hidden">
+                    <div class="swiper-wrapper">
+                    <?php foreach( $images as $image_id ): ?>
+                        <div class="swiper-slide">
+                            <?php echo wp_get_attachment_image( $image_id, $size_mobile ); ?>
                             </div>
                     <?php endforeach; ?>
                     </div>
