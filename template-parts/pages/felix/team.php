@@ -1,4 +1,4 @@
-<section id="section-team" class="section-team pt-16 md:pt-24 xl:pt-72 pb-28 md:pb-36 xl:pb-40 container-margins bg-white overflow-hidden">
+<section id="section-team" class="section-team pt-16 md:pt-24 xl:pt-72 pb-28 md:pb-36 xl:pb-40 container-margins bg-white overflow-hidden hidden">
     <div class="container-grid">
         <div class="col-span-4 md:col-span-8 xl:col-span-12">
             <h2 class="title-big mb-16 xl:mb-[90px]"><?php the_field( 'team_title' ); ?></h2>
